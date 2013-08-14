@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[My Octopress Blog]]></title>
+  <link href="http://lrxianed.github.io/atom.xml" rel="self"/>
+  <link href="http://lrxianed.github.io/"/>
+  <updated>2013-08-15T00:53:27+08:00</updated>
+  <id>http://lrxianed.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[第一篇:心情好]]></title>
+    <link href="http://lrxianed.github.io/blog/2013/08/15/di-%5B%3F%5D-pian-a/"/>
+    <updated>2013-08-15T00:52:00+08:00</updated>
+    <id>http://lrxianed.github.io/blog/2013/08/15/di-[?]-pian-a</id>
+    <content type="html"><![CDATA[<p>今晚和女神聊了半个钟头，心里暖暖的。虽然听得出我们只是朋友，但我不会放弃的，我一定要追到你！</p>
+]]></content>
+  </entry>
+  
+</feed>
