@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Lrxianed's Blog</title>
+  <title>Lrxianed</title>
   <meta name="author" content="Lrxianed">
 
   
-  <meta name="description" content="
+  <meta name="description" content="今天在办公室搞古了很久也没能在电脑上配置好环境，我怀疑是rubygems.org被屏蔽了，总是装不上依赖文件，taobao.org的更不行了。
+回到家之后在我的笔记本上继续搞古，Windows 下安装Ruby真的很多问题，今晚必须在十点之前搞好，然后睡觉。不能熬夜!!!!
 ">
   
 
@@ -22,7 +23,7 @@
   <link rel="canonical" href="http://lrxianed.github.io">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Lrxianed's Blog" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="Lrxianed" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
@@ -37,7 +38,7 @@
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">Lrxianed's Blog</a></h1>
+  <h1><a href="/">Lrxianed</a></h1>
   
     <h2>我想认真地书写</h2>
   
@@ -66,92 +67,6 @@
     <div id="content">
       <div class="blog-index">
   
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/16/test-the-img/">折耳</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-16T10:16:00+08:00" pubdate data-updated="true">Aug 16<span>th</span>, 2013</time>
-        
-        
-         | <a href="/blog/2013/08/16/test-the-img/#comments">Comments</a>
-        
-
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="http://ww4.sinaimg.cn/large/630e4e4egw1e7oap15fjjj20dw0ebjs0.jpg" alt="折耳" /></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/16/post-on-the-win/">Post on the Win</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-16T10:04:00+08:00" pubdate data-updated="true">Aug 16<span>th</span>, 2013</time>
-        
-        
-         | <a href="/blog/2013/08/16/post-on-the-win/#comments">Comments</a>
-        
-
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>神奇啊</h2>
-
-<p>如果你看到这篇文章，说明我已经配置成功了。我竟然在这台电脑上配置好了？！我家的Win 7都没弄好，这是神奇啊！！</p>
-
-<h2>今天怎么那么顺利</h2>
-
-<p>今天Qiang是不是睡着了，怎么没有Qiang掉我的电脑呢！？</p>
-</div>
-  
-  
-
-
-    </article>
   
   
     <article>
@@ -247,14 +162,6 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/08/16/test-the-img/">折耳</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/08/16/post-on-the-win/">Post on the Win</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/2013/08/15/zai-lai-yi-pian/">再来一篇</a>
       </li>
     
@@ -263,6 +170,35 @@
       </li>
     
   </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/lrxianed">@lrxianed</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'lrxianed',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
 
 

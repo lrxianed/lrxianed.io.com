@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>第一篇:心情好 - Lrxianed's Blog</title>
+  <title>第一篇:心情好 - Lrxianed</title>
   <meta name="author" content="Lrxianed">
 
   
@@ -22,7 +22,7 @@
   <link rel="canonical" href="http://lrxianed.github.io/blog/2013/08/15/di-yi-pian">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Lrxianed's Blog" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="Lrxianed" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
@@ -37,7 +37,7 @@
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">Lrxianed's Blog</a></h1>
+  <h1><a href="/">Lrxianed</a></h1>
   
     <h2>我想认真地书写</h2>
   
@@ -127,7 +127,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://lrxianed.github.io/blog/2013/08/15/di-yi-pian/" data-via="" data-counturl="http://lrxianed.github.io/blog/2013/08/15/di-yi-pian/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://lrxianed.github.io/blog/2013/08/15/di-yi-pian/" data-via="lrxianed" data-counturl="http://lrxianed.github.io/blog/2013/08/15/di-yi-pian/" >Tweet</a>
   
   
   
@@ -172,14 +172,6 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/08/16/test-the-img/">折耳</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/08/16/post-on-the-win/">Post on the Win</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/2013/08/15/zai-lai-yi-pian/">再来一篇</a>
       </li>
     
@@ -188,6 +180,35 @@
       </li>
     
   </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/lrxianed">@lrxianed</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'lrxianed',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
 
 
