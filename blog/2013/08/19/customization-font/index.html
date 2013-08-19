@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>第一篇:心情好 - Lrxianed</title>
+  <title>无差别浏览——Google Fonts - Lrxianed</title>
   <meta name="author" content="Lrxianed">
 
   
-  <meta name="description" content="今晚和女神聊了半个钟头，心里暖暖的。虽然听得出我们只是朋友，但我不会放弃的，我一定要追到你！
-">
+  <meta name="description" content="Google Fonts 如果你想让你的网页上的字体在其他平台上看起来都是统一的、无差别的，那么你需要添加网络字体，Google Fonts为我们提供丰富的网络字体，总有一款适合你！定制的方法也很简单，只需要修改两个文件，添加两行代码。注意：但遗憾的是，此举只能应用英文字体，对于中文字体， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://lrxianed.github.io/blog/2013/08/15/di-yi-pian">
+  <link rel="canonical" href="http://lrxianed.github.io/blog/2013/08/19/customization-font">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Lrxianed" type="application/atom+xml">
@@ -70,7 +69,7 @@
   
   <header>
     
-      <h1 class="entry-title">第一篇:心情好</h1>
+      <h1 class="entry-title">无差别浏览——Google Fonts</h1>
     
     
       <p class="meta">
@@ -86,7 +85,7 @@
   
 
 
-<time datetime="2013-08-15T00:52:00+08:00" pubdate data-updated="true">Aug 15<span>th</span>, 2013</time>
+<time datetime="2013-08-19T23:01:00+08:00" pubdate data-updated="true">Aug 19<span>th</span>, 2013</time>
         
         
          | <a href="#comments">Comments</a>
@@ -97,7 +96,27 @@
   </header>
 
 
-<div class="entry-content"><p>今晚和女神聊了半个钟头，心里暖暖的。虽然听得出我们只是朋友，但我不会放弃的，我一定要追到你！</p>
+<div class="entry-content"><h2>Google Fonts</h2>
+
+<p>如果你想让你的网页上的字体在其他平台上看起来都是统一的、无差别的，那么你需要添加网络字体，<a href="http://www.google.com/fonts">Google Fonts</a>为我们提供丰富的网络字体，总有一款适合你！定制的方法也很简单，只需要修改两个文件，添加两行代码。<strong>注意：但<strong style="color: #e0f;">遗憾</strong>的是，此举只能应用英文字体，对于中文字体，是不起作用的。</strong></p>
+
+<h4>/source/_includes/custom/head.html</h4>
+
+<p>在此文件中引入字体地址，例如：</p>
+
+<pre><code>&lt;link href="http://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet" type="text/css"&gt;
+</code></pre>
+
+<h4>/sass/custom/_style.scss</h4>
+
+<p>添加如下代码，用于修改博客顶部的博客名。</p>
+
+<pre><code>body &gt; header h1 {
+  font-family: "Crete Round", serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+</code></pre>
 </div>
 
 
@@ -120,15 +139,21 @@
   
 
 
-<time datetime="2013-08-15T00:52:00+08:00" pubdate data-updated="true">Aug 15<span>th</span>, 2013</time>
+<time datetime="2013-08-19T23:01:00+08:00" pubdate data-updated="true">Aug 19<span>th</span>, 2013</time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/octopress/'>Octopress</a>
+  
+</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://lrxianed.github.io/blog/2013/08/15/di-yi-pian/" data-via="lrxianed" data-counturl="http://lrxianed.github.io/blog/2013/08/15/di-yi-pian/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://lrxianed.github.io/blog/2013/08/19/customization-font/" data-via="lrxianed" data-counturl="http://lrxianed.github.io/blog/2013/08/19/customization-font/" >Tweet</a>
   
   
   
@@ -137,8 +162,8 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2013/08/19/octopress-install/" title="Previous Post: Octopress Install">&laquo; Octopress Install</a>
       
-        <a class="basic-alignment right" href="/blog/2013/08/15/zai-lai-yi-pian/" title="Next Post: 再来一篇">再来一篇 &raquo;</a>
       
     </p>
   </footer>
