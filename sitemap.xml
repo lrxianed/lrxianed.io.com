@@ -2,50 +2,54 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://lrxianed.github.io/blog/2013/08/15/di-yi-pian/</loc>
-        <lastmod>2013-08-19T01:25:04+08:00</lastmod>
+        <lastmod>2013-08-23T00:27:31+08:00</lastmod>
     </url>
     <url>
         <loc>http://lrxianed.github.io/blog/2013/08/15/zai-lai-yi-pian/</loc>
-        <lastmod>2013-08-19T01:25:04+08:00</lastmod>
+        <lastmod>2013-08-23T00:27:31+08:00</lastmod>
     </url>
     <url>
         <loc>http://lrxianed.github.io/blog/2013/08/16/zhe-er/</loc>
-        <lastmod>2013-08-19T01:25:04+08:00</lastmod>
+        <lastmod>2013-08-23T00:27:31+08:00</lastmod>
     </url>
     <url>
         <loc>http://lrxianed.github.io/blog/2013/08/16/if-i-love-you/</loc>
-        <lastmod>2013-08-19T01:25:04+08:00</lastmod>
+        <lastmod>2013-08-23T00:27:31+08:00</lastmod>
     </url>
     <url>
         <loc>http://lrxianed.github.io/blog/2013/08/16/i-want-to-sleep/</loc>
-        <lastmod>2013-08-19T01:25:04+08:00</lastmod>
+        <lastmod>2013-08-23T00:27:31+08:00</lastmod>
     </url>
     <url>
         <loc>http://lrxianed.github.io/blog/2013/08/18/ssd-on-my-mac-mini/</loc>
-        <lastmod>2013-08-19T01:25:04+08:00</lastmod>
+        <lastmod>2013-08-23T00:27:31+08:00</lastmod>
     </url>
     <url>
         <loc>http://lrxianed.github.io/blog/2013/08/19/octopress-install/</loc>
-        <lastmod>2013-08-19T01:35:09+08:00</lastmod>
+        <lastmod>2013-08-23T00:27:31+08:00</lastmod>
     </url>
     <url>
         <loc>http://lrxianed.github.io/blog/2013/08/19/customization-font/</loc>
-        <lastmod>2013-08-19T23:06:16+08:00</lastmod>
+        <lastmod>2013-08-23T00:27:31+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://lrxianed.github.io/blog/2013/08/23/i-want-to-say-something/</loc>
+        <lastmod>2013-08-23T00:46:04+08:00</lastmod>
     </url>
     <url>
         <loc>http://lrxianed.github.io/blog/about/</loc>
-        <lastmod>2013-08-19T01:25:04+08:00</lastmod>
+        <lastmod>2013-08-23T00:27:31+08:00</lastmod>
     </url>
     <url>
         <loc>http://lrxianed.github.io/blog/archives/</loc>
-        <lastmod>2013-08-19T23:06:16+08:00</lastmod>
+        <lastmod>2013-08-23T00:46:04+08:00</lastmod>
     </url>
     <url>
         <loc>http://lrxianed.github.io/</loc>
-        <lastmod>2013-08-19T23:06:16+08:00</lastmod>
+        <lastmod>2013-08-23T00:46:04+08:00</lastmod>
     </url>
     <url>
         <loc>http://lrxianed.github.io/robots.txt</loc>
-        <lastmod>2013-08-19T01:25:04+08:00</lastmod>
+        <lastmod>2013-08-23T00:27:31+08:00</lastmod>
     </url>
 </urlset>
