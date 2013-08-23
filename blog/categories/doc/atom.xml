@@ -4,7 +4,7 @@
   <title><![CDATA[Category: doc | Lrxianed]]></title>
   <link href="http://lrxianed.github.io/blog/categories/doc/atom.xml" rel="self"/>
   <link href="http://lrxianed.github.io/"/>
-  <updated>2013-08-24T01:18:29+08:00</updated>
+  <updated>2013-08-24T01:20:34+08:00</updated>
   <id>http://lrxianed.github.io/</id>
   <author>
     <name><![CDATA[Lrxianed]]></name>
@@ -22,10 +22,16 @@
 
 <h2>语法</h2>
 
+<p>```</p>
+
 <pre><code>File /Users/lrxianed/lrxianed.github.com/source/downloads/code/path/to/file could not be found
 </code></pre>
 
+<p>```</p>
+
 <h2>一个例子讲解</h2>
+
+<p>```</p>
 
 <pre><code><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>我的第一JavaScript游戏  (game.js)</span> <a href='/downloads/code/game.js'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -117,7 +123,8 @@
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 </code></pre>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>我的第一JavaScript游戏  (game.js)</span> <a href='/downloads/code/game.js'>download</a></figcaption>
+<p>```
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>我的第一JavaScript游戏  (game.js)</span> <a href='/downloads/code/game.js'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
