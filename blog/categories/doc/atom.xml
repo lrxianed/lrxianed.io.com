@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: doc | Lrxianed]]></title>
+  <link href="http://lrxianed.github.io/blog/categories/doc/atom.xml" rel="self"/>
+  <link href="http://lrxianed.github.io/"/>
+  <updated>2013-08-24T00:25:58+08:00</updated>
+  <id>http://lrxianed.github.io/</id>
+  <author>
+    <name><![CDATA[Lrxianed]]></name>
+    <email><![CDATA[lrxianed@qq.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Backtick Code Blocks 代码高亮]]></title>
+    <link href="http://lrxianed.github.io/blog/2013/08/24/backtick-code-blocks/"/>
+    <updated>2013-08-24T00:21:00+08:00</updated>
+    <id>http://lrxianed.github.io/blog/2013/08/24/backtick-code-blocks</id>
+    <content type="html"><![CDATA[<p>有了此插件，你可以在文章中随意地插入代码，你还可以附带上代码标题以及下载链接。规则很简单，一看就懂。</p>
+
+<h2>代码</h2>
+
+<pre><code>``` [language] [title] [url] [link text]
+    代码区
+``` 
+</code></pre>
+
+<h2>一个例子讲解</h2>
+
+<pre><code>``` ruby Discover if a number is prime http://www.noulakaz.net 源码下载
+class Fixnum
+  def prime?
+    ('1' * self) !~ /^1?$|^(11+?)\1+$/
+  end
+end
+```
+</code></pre>
+
+<p>``` ruby Discover if a number is prime <a href="http://www.noulakaz.net">http://www.noulakaz.net</a> 源码下载
+class Fixnum
+  def prime?</p>
+
+<pre><code>('1' * self) !~ /^1?$|^(11+?)\1+$/
+</code></pre>
+
+<p>  end
+end
+```</p>
+
+<h3>讲解：</h3>
+
+<ul>
+<li>[language] [title] [url] [link text] 这些参数是不必要的。不填就没有代码标题、代码高亮等效果；</li>
+<li>Discover if a number is prime    #代码标题；</li>
+<li>ruby    #标记语言；</li>
+<li><a href="http://www.noulakaz.net">http://www.noulakaz.net</a>    #代码下载链接地址；</li>
+<li>源码下载    #下载链接的标题；</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

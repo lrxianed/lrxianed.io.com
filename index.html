@@ -9,7 +9,8 @@
   <meta name="author" content="Lrxianed">
 
   
-  <meta name="description" content="我早想来发些牢骚了，无奈电脑出了些问题。今天和小雅去报考教师招聘，她郑重地做了个决定，澳头第一小学。她去年就在澳头失败，今年再战澳头，需要很大的勇气，从哪里跌倒就要从哪里站起来，这是坚强的表现。 心里多少还有些不安，这无可回避，但是不能表现出来，给予鼓励和支持才重要，再多的担心都是徒劳。她， &hellip;">
+  <meta name="description" content="有了此插件，你可以在文章中随意地插入代码，你还可以附带上代码标题以及下载链接。规则很简单，一看就懂。 代码 ``` [language] [title] [url] [link text] 代码区
+``` 一个例子讲解 ``` ruby Discover if a number is prime &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +67,88 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/08/24/backtick-code-blocks/">Backtick Code Blocks 代码高亮</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-24T00:21:00+08:00" pubdate data-updated="true">Aug 24<span>th</span>, 2013</time>
+        
+        
+         | <a href="/blog/2013/08/24/backtick-code-blocks/#comments">Comments</a>
+        
+
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>有了此插件，你可以在文章中随意地插入代码，你还可以附带上代码标题以及下载链接。规则很简单，一看就懂。</p>
+
+<h2>代码</h2>
+
+<pre><code>``` [language] [title] [url] [link text]
+    代码区
+``` 
+</code></pre>
+
+<h2>一个例子讲解</h2>
+
+<pre><code>``` ruby Discover if a number is prime http://www.noulakaz.net 源码下载
+class Fixnum
+  def prime?
+    ('1' * self) !~ /^1?$|^(11+?)\1+$/
+  end
+end
+```
+</code></pre>
+
+<figure class='code'><figcaption><span>Discover if a number is prime</span><a href='http://www.noulakaz.net'>源码下载</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Fixnum</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">prime?</span>
+</span><span class='line'>    <span class="p">(</span><span class="s1">&#39;1&#39;</span> <span class="o">*</span> <span class="nb">self</span><span class="p">)</span> <span class="o">!~</span> <span class="sr">/^1?$|^(11+?)\1+$/</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>讲解：</h3>
+
+<ul>
+<li>[language] [title] [url] [link text] 这些参数是不必要的。不填就没有代码标题、代码高亮等效果；</li>
+<li>Discover if a number is prime    #代码标题；</li>
+<li>ruby    #标记语言；</li>
+<li><a href="http://www.noulakaz.net">http://www.noulakaz.net</a>    #代码下载链接地址；</li>
+<li>源码下载    #下载链接的标题；</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -151,19 +234,28 @@
 
 <p>在此文件中引入字体地址，例如：</p>
 
-<pre><code>&lt;link href="http://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet" type="text/css"&gt;
-</code></pre>
+<figure class='code'><figcaption><span>/source/_includes/custom/head.html </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://fonts.googleapis.com/css?family=Crete+Round&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
 
 <h4>/sass/custom/_style.scss</h4>
 
 <p>添加如下代码，用于修改博客顶部的博客名。</p>
 
-<pre><code>body &gt; header h1 {
-  font-family: "Crete Round", serif;
-  text-transform: uppercase;
-  font-weight: normal;
-}
-</code></pre>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>body &gt; header h1 {
+</span><span class='line'>  font-family: &quot;Crete Round&quot;, serif;
+</span><span class='line'>  text-transform: uppercase;
+</span><span class='line'>  font-weight: normal;
+</span><span class='line'>}
+</span></code></pre></td></tr></table></div></figure>
+
 </div>
   
   
@@ -503,6 +595,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/08/24/backtick-code-blocks/">Backtick Code Blocks 代码高亮</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/08/23/i-want-to-say-something/">我想发牢骚</a>
       </li>
     
@@ -516,10 +612,6 @@
     
       <li class="post">
         <a href="/blog/2013/08/18/ssd-on-my-mac-mini/">飞一般的感觉</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/08/16/i-want-to-sleep/">睡觉去</a>
       </li>
     
   </ul>

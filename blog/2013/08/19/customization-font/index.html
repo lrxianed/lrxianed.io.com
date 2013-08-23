@@ -104,19 +104,28 @@
 
 <p>在此文件中引入字体地址，例如：</p>
 
-<pre><code>&lt;link href="http://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet" type="text/css"&gt;
-</code></pre>
+<figure class='code'><figcaption><span>/source/_includes/custom/head.html </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://fonts.googleapis.com/css?family=Crete+Round&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
 
 <h4>/sass/custom/_style.scss</h4>
 
 <p>添加如下代码，用于修改博客顶部的博客名。</p>
 
-<pre><code>body &gt; header h1 {
-  font-family: "Crete Round", serif;
-  text-transform: uppercase;
-  font-weight: normal;
-}
-</code></pre>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>body &gt; header h1 {
+</span><span class='line'>  font-family: &quot;Crete Round&quot;, serif;
+</span><span class='line'>  text-transform: uppercase;
+</span><span class='line'>  font-weight: normal;
+</span><span class='line'>}
+</span></code></pre></td></tr></table></div></figure>
+
 </div>
 
 
@@ -200,6 +209,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/08/24/backtick-code-blocks/">Backtick Code Blocks 代码高亮</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/08/23/i-want-to-say-something/">我想发牢骚</a>
       </li>
     
@@ -213,10 +226,6 @@
     
       <li class="post">
         <a href="/blog/2013/08/18/ssd-on-my-mac-mini/">飞一般的感觉</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/08/16/i-want-to-sleep/">睡觉去</a>
       </li>
     
   </ul>

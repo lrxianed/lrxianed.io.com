@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Lrxianed]]></title>
   <link href="http://lrxianed.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://lrxianed.github.io/"/>
-  <updated>2013-08-23T17:45:35+08:00</updated>
+  <updated>2013-08-24T00:25:58+08:00</updated>
   <id>http://lrxianed.github.io/</id>
   <author>
     <name><![CDATA[Lrxianed]]></name>
@@ -26,12 +26,16 @@
 
 <p>在此文件中引入字体地址，例如：</p>
 
-<pre><code>&lt;link href="http://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet" type="text/css"&gt;
-</code></pre>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>/source/_includes/custom/head.html </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://fonts.googleapis.com/css?family=Crete+Round&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h4>/sass/custom/_style.scss</h4>
 
 <p>添加如下代码，用于修改博客顶部的博客名。</p>
+
+<p>``` html</p>
 
 <pre><code>body &gt; header h1 {
   font-family: "Crete Round", serif;
@@ -39,6 +43,8 @@
   font-weight: normal;
 }
 </code></pre>
+
+<p>```</p>
 ]]></content>
   </entry>
   

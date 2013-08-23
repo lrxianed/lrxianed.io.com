@@ -4,7 +4,7 @@
   <title><![CDATA[Lrxianed]]></title>
   <link href="http://lrxianed.github.io/atom.xml" rel="self"/>
   <link href="http://lrxianed.github.io/"/>
-  <updated>2013-08-23T17:45:35+08:00</updated>
+  <updated>2013-08-24T00:25:58+08:00</updated>
   <id>http://lrxianed.github.io/</id>
   <author>
     <name><![CDATA[Lrxianed]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Backtick Code Blocks 代码高亮]]></title>
+    <link href="http://lrxianed.github.io/blog/2013/08/24/backtick-code-blocks/"/>
+    <updated>2013-08-24T00:21:00+08:00</updated>
+    <id>http://lrxianed.github.io/blog/2013/08/24/backtick-code-blocks</id>
+    <content type="html"><![CDATA[<p>有了此插件，你可以在文章中随意地插入代码，你还可以附带上代码标题以及下载链接。规则很简单，一看就懂。</p>
+
+<h2>代码</h2>
+
+<pre><code>``` [language] [title] [url] [link text]
+    代码区
+``` 
+</code></pre>
+
+<h2>一个例子讲解</h2>
+
+<pre><code>``` ruby Discover if a number is prime http://www.noulakaz.net 源码下载
+class Fixnum
+  def prime?
+    ('1' * self) !~ /^1?$|^(11+?)\1+$/
+  end
+end
+```
+</code></pre>
+
+<figure class='code'><figcaption><span>Discover if a number is prime</span><a href='http://www.noulakaz.net'>源码下载</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Fixnum</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">prime?</span>
+</span><span class='line'>    <span class="p">(</span><span class="s1">&#39;1&#39;</span> <span class="o">*</span> <span class="nb">self</span><span class="p">)</span> <span class="o">!~</span> <span class="sr">/^1?$|^(11+?)\1+$/</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>讲解：</h3>
+
+<ul>
+<li>[language] [title] [url] [link text] 这些参数是不必要的。不填就没有代码标题、代码高亮等效果；</li>
+<li>Discover if a number is prime    #代码标题；</li>
+<li>ruby    #标记语言；</li>
+<li><a href="http://www.noulakaz.net">http://www.noulakaz.net</a>    #代码下载链接地址；</li>
+<li>源码下载    #下载链接的标题；</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[我想发牢骚]]></title>
@@ -39,19 +90,28 @@
 
 <p>在此文件中引入字体地址，例如：</p>
 
-<pre><code>&lt;link href="http://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet" type="text/css"&gt;
-</code></pre>
+<figure class='code'><figcaption><span>/source/_includes/custom/head.html </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://fonts.googleapis.com/css?family=Crete+Round&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
 
 <h4>/sass/custom/_style.scss</h4>
 
 <p>添加如下代码，用于修改博客顶部的博客名。</p>
 
-<pre><code>body &gt; header h1 {
-  font-family: "Crete Round", serif;
-  text-transform: uppercase;
-  font-weight: normal;
-}
-</code></pre>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>body &gt; header h1 {
+</span><span class='line'>  font-family: &quot;Crete Round&quot;, serif;
+</span><span class='line'>  text-transform: uppercase;
+</span><span class='line'>  font-weight: normal;
+</span><span class='line'>}
+</span></code></pre></td></tr></table></div></figure>
+
 ]]></content>
   </entry>
   
