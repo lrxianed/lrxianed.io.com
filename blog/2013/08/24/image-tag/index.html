@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Octopress Install - Lrxianed</title>
+  <title>插入图片 - Lrxianed</title>
   <meta name="author" content="Lrxianed">
 
   
-  <meta name="description" content="稍微对Octopress熟悉了，是时候要写点东西总结一下了，我想说的不多，网上有很多教程，即使是一个建站的初学者，只要按照那些详尽的教程一步一步走，也能建起这样一个博客。 我会分三部分来讲讲这几天的所得，因为我就是经历了这三个过程，最后安定下来的。博客还是重在分享，如果太沉醉于折腾，就会南辕北辙了 &hellip;">
+  <meta name="description" content="如果你喜欢markdown插入图片的语法，那么你也一定会喜欢Octopress简洁的方式，而且附带更多的参数，有更丰富的样式。 语法 ｛% img [class names] /path/to/image [width] [height] [title text [alt text]] %｝ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://lrxianed.github.io/blog/2013/08/19/octopress-install">
+  <link rel="canonical" href="http://lrxianed.github.io/blog/2013/08/24/image-tag">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Lrxianed" type="application/atom+xml">
@@ -69,7 +69,7 @@
   
   <header>
     
-      <h1 class="entry-title">Octopress Install</h1>
+      <h1 class="entry-title">插入图片</h1>
     
     
       <p class="meta">
@@ -85,7 +85,7 @@
   
 
 
-<time datetime="2013-08-19T01:26:00+08:00" pubdate data-updated="true">Aug 19<span>th</span>, 2013</time>
+<time datetime="2013-08-24T15:11:00+08:00" pubdate data-updated="true">Aug 24<span>th</span>, 2013</time>
         
         
          | <a href="#comments">Comments</a>
@@ -96,15 +96,37 @@
   </header>
 
 
-<div class="entry-content"><p>稍微对Octopress熟悉了，是时候要写点东西总结一下了，我想说的不多，网上有很多教程，即使是一个建站的初学者，只要按照那些详尽的教程一步一步走，也能建起这样一个博客。</p>
+<div class="entry-content"><p>如果你喜欢markdown插入图片的语法，那么你也一定会喜欢Octopress简洁的方式，而且附带更多的参数，有更丰富的样式。</p>
 
-<p>我会分三部分来讲讲这几天的所得，因为我就是经历了这三个过程，最后安定下来的。博客还是重在分享，如果太沉醉于折腾，就会南辕北辙了。大致过了这三个阶段，也就可以扎根了。</p>
+<h2>语法</h2>
 
-<h1>一、Octopress博客安装简介</h1>
+<pre><code>｛% img [class names] /path/to/image [width] [height] [title text [alt text]] %｝
+</code></pre>
 
-<h1>二、为已有Octopress配置本地环境</h1>
+<h2>一个例子讲解</h2>
 
-<h1>三、修改Octopress主题</h1>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>｛% img http://placekitten.com/890/280 %｝
+</span><span class='line'>｛% img left http://placekitten.com/320/250 Place Kitten #2 %｝
+</span><span class='line'>｛% img right http://placekitten.com/300/500 150 250 Place Kitten #3 %｝
+</span><span class='line'>｛% img right http://placekitten.com/300/500 150 250 'Place Kitten #4' 'An image of a very cute kitten' %｝</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img class="left" src="http://image.xinli001.com/20130823/18295669882a0e175bf933.jpg" width="200" title="i love you" >如果我爱你，而你正巧也爱我——那你生病的时候，我会去照顾你，陪着你到好。你骑车的时候，我会要你小心一点，还要你到的时候打个电话跟我说。你忘了吃晚餐的时候，我会装作很生气，然后说：“你这样会让我担心呢！”你头发乱了的时候，我会笑着替你拨一拨，然后，手还留恋地在你发上想多待几秒。你想哭，我会陪你掉泪，尽管前一刻我的心情其实是雀跃的。你要笑，我会陪你笑出声，就算我上一秒其实是沮丧的。我在空闲的时候，会念念你的名字，想想你的声音。我在逛街的时候，会想到：啊，你正好缺了这个。我在发现了好东西的时候，一定马上想到：一定要你来看看。
+我失眠之后，听到你也失眠了，会在心里偷偷地傻笑。我在熬夜的时候，接到你只为说声“不要太累，早点睡吧”的电话会甜甜地笑着，然后乖乖地去睡。我在想你的时候，知道你一定也在想着我。</p>
+
+<p><img class="right" src="http://image.xinli001.com/20130823/18295669882a0e175bf933.jpg" width="100" title="i don`t love you" >但是，如果我爱你，而你不巧不爱我——那你生病的时候，我只会打电话安慰你，不敢奢求待在你身边。你骑车的时候，我只会暗暗地在心中希望你安全。你忘了吃晚餐，我只会笑着问：“为什么不吃啊？”你头发乱了，我只能轻轻地告诉你：“头发乱了哦。”你想哭，我只能在旁白呢无奈地轻轻叹着气。你想笑，我只能微微地对着你笑着。我在空闲的时候，还是会念念你的名字，想想你的声音。我在逛街的时候，会想到：是谁帮你买了这个呢？我在发现了好东西的时候，无奈地想着：会是谁告诉你这个好消息呢？我失眠之后，会躺着不让你看见我的黑眼圈。我在熬夜的时候，不敢期待会有电话铃声响起来。我在想你的时候，会想到，这时的你在想着谁呢？如果我不再爱你了，我一定就不爱你了，我会去爱上别人。世界上有什么不会失去的东西吗？我相信有，你最好也相信。</p>
+
+<h2>讲解</h2>
+
+<ul>
+<li>[class names]是用来定义图片的方位的，有<code>left</code> <code>right</code>两个参数可选；</li>
+<li>你还可以定义图片的大小。</li>
+</ul>
+
 </div>
 
 
@@ -127,21 +149,15 @@
   
 
 
-<time datetime="2013-08-19T01:26:00+08:00" pubdate data-updated="true">Aug 19<span>th</span>, 2013</time>
+<time datetime="2013-08-24T15:11:00+08:00" pubdate data-updated="true">Aug 24<span>th</span>, 2013</time>
       
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/learn/'>learn</a>
-  
-</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://lrxianed.github.io/blog/2013/08/19/octopress-install/" data-via="lrxianed" data-counturl="http://lrxianed.github.io/blog/2013/08/19/octopress-install/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://lrxianed.github.io/blog/2013/08/24/image-tag/" data-via="lrxianed" data-counturl="http://lrxianed.github.io/blog/2013/08/24/image-tag/" >Tweet</a>
   
   
   
@@ -150,10 +166,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/08/18/ssd-on-my-mac-mini/" title="Previous Post: 飞一般的感觉">&laquo; 飞一般的感觉</a>
+        <a class="basic-alignment left" href="/blog/2013/08/24/include-code/" title="Previous Post: include code 嵌入代码文件">&laquo; include code 嵌入代码文件</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/08/19/customization-font/" title="Next Post: 无差别浏览——Google Fonts">无差别浏览——Google Fonts &raquo;</a>
       
     </p>
   </footer>
