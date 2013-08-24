@@ -4,7 +4,7 @@
   <title><![CDATA[Category: doc | Lrxianed]]></title>
   <link href="http://lrxianed.github.io/blog/categories/doc/atom.xml" rel="self"/>
   <link href="http://lrxianed.github.io/"/>
-  <updated>2013-08-24T01:35:29+08:00</updated>
+  <updated>2013-08-24T11:02:48+08:00</updated>
   <id>http://lrxianed.github.io/</id>
   <author>
     <name><![CDATA[Lrxianed]]></name>
@@ -22,13 +22,13 @@
 
 <h2>语法</h2>
 
-<p>大括号百分号 include_code [title] [lang:language] path/to/file 百分号大括号</p>
-
-<p>注：大括号 = { ；百分号 = % ；自己替换啊，暂时还未解决这个问题。</p>
+<pre><code>｛% include_code [title] [lang:language] path/to/file %｝
+</code></pre>
 
 <h2>一个例子讲解</h2>
 
-<p>大括号百分号 include_code 我的第一JavaScript游戏 lang:js game.js 百分号大括号</p>
+<pre><code>｛% include_code 我的第一JavaScript游戏 lang:js game.js %｝
+</code></pre>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>我的第一JavaScript游戏  (game.js)</span> <a href='/downloads/code/game.js'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
