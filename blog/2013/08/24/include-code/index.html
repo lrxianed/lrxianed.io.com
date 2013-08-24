@@ -9,7 +9,7 @@
   <meta name="author" content="Lrxianed">
 
   
-  <meta name="description" content="原来Octopress还可以在文章中直接嵌入代码文件的，好强大的样子。 语法 ｛% include_code [title] [lang:language] path/to/file %｝ 一个例子讲解 ｛% include_code 我的第一JavaScript游戏 lang:js game. &hellip;">
+  <meta name="description" content="原来Octopress还可以在文章中直接嵌入代码文件的，好强大的样子。 语法 {% include_code 标题 [lang:language] 文件路径 %} 一个例子讲解 {% include_code 我的第一JavaScript游戏 lang:js game.js %} &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -100,12 +100,12 @@
 
 <h2>语法</h2>
 
-<pre><code>｛% include_code [title] [lang:language] path/to/file %｝
+<pre><code>{% include_code 标题 [lang:language] 文件路径 %}
 </code></pre>
 
 <h2>一个例子讲解</h2>
 
-<pre><code>｛% include_code 我的第一JavaScript游戏 lang:js game.js %｝
+<pre><code>{% include_code 我的第一JavaScript游戏 lang:js game.js %}
 </code></pre>
 
 <figure class='code'><figcaption><span>我的第一JavaScript游戏  (game.js)</span> <a href='/downloads/code/game.js'>download</a></figcaption>
@@ -198,12 +198,10 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<h3>讲解</h3>
+<h3>注意</h3>
 
 <ul>
-<li>默认的代码文件默认的存放文件夹（也就是代码的根目录）是<code>source/downloads/code</code>，如果没有你可以自己创建；如果你想修改默认的存放路径，可用在_config.yml中修改。</li>
-<li>如果你的代码存放在<code>source/downloads/code</code>，那么文件名就是路径……不解释，小白都应该懂了；</li>
-<li><code>[title]</code>是代码的标题；</li>
+<li>默认的代码文件默认的存放文件夹（也就是代码的根目录）是<code>source/downloads/code</code>，如果没有你可以自己创建；如果你想修改默认的存放路径，可用在<code>_config.yml</code>中修改。</li>
 <li><code>[lang:language]</code>不是必要的，此插件会自动识别代码的语言分类，但不是所有语言种类都能识别，写上就不会错的啦！</li>
 </ul>
 
@@ -290,6 +288,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/08/24/render-partial/">在文章中插入文章</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/08/24/image-tag/">插入图片</a>
       </li>
     
@@ -323,10 +325,6 @@
     
       <li class="post">
         <a href="/blog/2013/08/16/if-i-love-you/">如果我不再爱你了</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/08/16/zhe-er/">折耳</a>
       </li>
     
   </ul>

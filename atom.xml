@@ -4,7 +4,7 @@
   <title><![CDATA[Lrxianed]]></title>
   <link href="http://lrxianed.github.io/atom.xml" rel="self"/>
   <link href="http://lrxianed.github.io/"/>
-  <updated>2013-08-24T15:22:43+08:00</updated>
+  <updated>2013-08-24T17:12:33+08:00</updated>
   <id>http://lrxianed.github.io/</id>
   <author>
     <name><![CDATA[Lrxianed]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[在文章中插入文章]]></title>
+    <link href="http://lrxianed.github.io/blog/2013/08/24/render-partial/"/>
+    <updated>2013-08-24T16:13:00+08:00</updated>
+    <id>http://lrxianed.github.io/blog/2013/08/24/render-partial</id>
+    <content type="html"><![CDATA[<p>之前给大家介绍了在文章直接插入代码文件的一款插件：<strong>include code</strong> 现在有一款插件，可以在文章中插入另一篇文章。有了这插件，我可以很容易将相关的文章都汇集在一篇文章中（例如写一篇教程）。就像把一篇长篇大论分割成一小块一小块，这使得编辑的时候，更舒心，排版也更加方便了。所以有必要介绍一下这款如此奇特的插件——<strong>Render Partial</strong>。</p>
+
+<h2>语法</h2>
+
+<pre><code>{% render_partial 文件路径 %\}
+</code></pre>
+
+<h3>注意:</h3>
+
+<ul>
+<li>根目录默认为<code>source</code>;</li>
+<li>只有一个参数，就是文章的路径。例如：添加路径 <code>/source/doc/1.markdown</code>的文章到一篇文章中，你可以这样写<code>{% render_partial doc/1.markdown %}</code></li>
+<li>如果想访问<code>source</code>的上级，可以这样写：<code>../README.markdown</code></li>
+</ul>
+
+
+<p><strong>对一篇文章也进行区块化，这真是Octopress 的一大特色。</strong></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[插入图片]]></title>
@@ -22,31 +47,27 @@
 
 <h2>语法</h2>
 
-<pre><code>｛% img [class names] /path/to/image [width] [height] [title text [alt text]] %｝
+<pre><code>{% img [class names] [图片路径] [宽] [高] [图片标题 替代文本] %}
 </code></pre>
 
 <h2>一个例子讲解</h2>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>｛% img http://placekitten.com/890/280 %｝
-</span><span class='line'>｛% img left http://placekitten.com/320/250 Place Kitten #2 %｝
-</span><span class='line'>｛% img right http://placekitten.com/300/500 150 250 Place Kitten #3 %｝
-</span><span class='line'>｛% img right http://placekitten.com/300/500 150 250 'Place Kitten #4' 'An image of a very cute kitten' %｝</span></code></pre></td></tr></table></div></figure>
-
+<pre><code>{% img http://placekitten.com/890/280 %}
+{% img left http://placekitten.com/320/250 Place Kitten #2 %}
+{% img right http://placekitten.com/300/500 150 250 Place Kitten #3 %}
+{% img right http://placekitten.com/300/500 150 250 'Place Kitten #4' 'An image of a very cute kitten' %}
+</code></pre>
 
 <p><img class="left" src="http://image.xinli001.com/20130823/18295669882a0e175bf933.jpg" width="200" title="i love you" >如果我爱你，而你正巧也爱我——那你生病的时候，我会去照顾你，陪着你到好。你骑车的时候，我会要你小心一点，还要你到的时候打个电话跟我说。你忘了吃晚餐的时候，我会装作很生气，然后说：“你这样会让我担心呢！”你头发乱了的时候，我会笑着替你拨一拨，然后，手还留恋地在你发上想多待几秒。你想哭，我会陪你掉泪，尽管前一刻我的心情其实是雀跃的。你要笑，我会陪你笑出声，就算我上一秒其实是沮丧的。我在空闲的时候，会念念你的名字，想想你的声音。我在逛街的时候，会想到：啊，你正好缺了这个。我在发现了好东西的时候，一定马上想到：一定要你来看看。
 我失眠之后，听到你也失眠了，会在心里偷偷地傻笑。我在熬夜的时候，接到你只为说声“不要太累，早点睡吧”的电话会甜甜地笑着，然后乖乖地去睡。我在想你的时候，知道你一定也在想着我。</p>
 
 <p><img class="right" src="http://image.xinli001.com/20130823/18295669882a0e175bf933.jpg" width="100" title="i don`t love you" >但是，如果我爱你，而你不巧不爱我——那你生病的时候，我只会打电话安慰你，不敢奢求待在你身边。你骑车的时候，我只会暗暗地在心中希望你安全。你忘了吃晚餐，我只会笑着问：“为什么不吃啊？”你头发乱了，我只能轻轻地告诉你：“头发乱了哦。”你想哭，我只能在旁白呢无奈地轻轻叹着气。你想笑，我只能微微地对着你笑着。我在空闲的时候，还是会念念你的名字，想想你的声音。我在逛街的时候，会想到：是谁帮你买了这个呢？我在发现了好东西的时候，无奈地想着：会是谁告诉你这个好消息呢？我失眠之后，会躺着不让你看见我的黑眼圈。我在熬夜的时候，不敢期待会有电话铃声响起来。我在想你的时候，会想到，这时的你在想着谁呢？如果我不再爱你了，我一定就不爱你了，我会去爱上别人。世界上有什么不会失去的东西吗？我相信有，你最好也相信。</p>
 
-<h2>讲解</h2>
+<h2>注意</h2>
 
 <ul>
 <li>[class names]是用来定义图片的方位的，有<code>left</code> <code>right</code>两个参数可选；</li>
-<li>你还可以定义图片的大小。</li>
+<li>你还可以定义图片的宽、高。这些都是markdown所不具有的。</li>
 </ul>
 
 ]]></content>
@@ -61,12 +82,12 @@
 
 <h2>语法</h2>
 
-<pre><code>｛% include_code [title] [lang:language] path/to/file %｝
+<pre><code>{% include_code 标题 [lang:language] 文件路径 %}
 </code></pre>
 
 <h2>一个例子讲解</h2>
 
-<pre><code>｛% include_code 我的第一JavaScript游戏 lang:js game.js %｝
+<pre><code>{% include_code 我的第一JavaScript游戏 lang:js game.js %}
 </code></pre>
 
 <figure class='code'><figcaption><span>我的第一JavaScript游戏  (game.js)</span> <a href='http://lrxianed.github.io/downloads/code/game.js'>download</a></figcaption>
@@ -159,12 +180,10 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<h3>讲解</h3>
+<h3>注意</h3>
 
 <ul>
-<li>默认的代码文件默认的存放文件夹（也就是代码的根目录）是<code>source/downloads/code</code>，如果没有你可以自己创建；如果你想修改默认的存放路径，可用在_config.yml中修改。</li>
-<li>如果你的代码存放在<code>source/downloads/code</code>，那么文件名就是路径……不解释，小白都应该懂了；</li>
-<li><code>[title]</code>是代码的标题；</li>
+<li>默认的代码文件默认的存放文件夹（也就是代码的根目录）是<code>source/downloads/code</code>，如果没有你可以自己创建；如果你想修改默认的存放路径，可用在<code>_config.yml</code>中修改。</li>
 <li><code>[lang:language]</code>不是必要的，此插件会自动识别代码的语言分类，但不是所有语言种类都能识别，写上就不会错的啦！</li>
 </ul>
 
@@ -180,7 +199,7 @@
 
 <h2>代码</h2>
 
-<pre><code>``` [language] [title] [url] [link text]
+<pre><code>``` 语言种类 标题 下载链接 下载链接的标题
     代码区
 ``` 
 </code></pre>
@@ -209,13 +228,13 @@ end
 </span></code></pre></td></tr></table></div></figure>
 
 
-<h3>讲解：</h3>
+<h3>注意：</h3>
 
 <ul>
-<li>[language] [title] [url] [link text] 这些参数是不必要的。不填就没有代码标题、代码高亮等效果；</li>
-<li>Discover if a number is prime    #代码标题；</li>
-<li>ruby    #标记语言；</li>
-<li><a href="http://www.noulakaz.net">http://www.noulakaz.net</a>    #代码下载链接地址；</li>
+<li>所有参数都是不必要的。不填就没有代码标题、代码高亮等效果；</li>
+<li>ruby    #先写明语言种类；</li>
+<li>Discover if a number is prime    #代码区块的标题；</li>
+<li><a href="http://www.noulakaz.net">http://www.noulakaz.net</a>    #代码的下载链接地址；</li>
 <li>源码下载    #下载链接的标题；</li>
 </ul>
 
