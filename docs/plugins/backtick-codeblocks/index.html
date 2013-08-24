@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>docs - Lrxianed</title>
+  <title>Backtick Code Blocks 代码高亮 - Lrxianed</title>
   <meta name="author" content="Lrxianed">
 
   
-  <meta name="description" content="Docs Aug 24th, 2013 之前给大家介绍了在文章直接插入代码文件的一款插件：include code 现在有一款插件，可以在文章中插入另一篇文章。有了这插件，我可以很容易将相关的文章都汇集在一篇文章中（例如写一篇教程）。就像把一篇长篇大论分割成一小块一小块，这使得编辑的时候，更舒心 &hellip;">
+  <meta name="description" content="Backtick Code Blocks 代码高亮 Aug 24th, 2013 有了此插件，你可以在文章中随意地插入代码，你还可以附带上代码标题以及下载链接。规则很简单，一看就懂。 代码 ``` 语言种类 标题 下载链接 下载链接的标题 代码区
+``` 一个例子讲解 ``` ruby &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://lrxianed.github.io/docs/render-partial">
+  <link rel="canonical" href="http://lrxianed.github.io/docs/plugins/backtick-codeblocks">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Lrxianed" type="application/atom+xml">
@@ -69,7 +70,7 @@
 <article role="article">
   
   <header>
-    <h1 class="entry-title">Docs</h1>
+    <h1 class="entry-title">Backtick Code Blocks 代码高亮</h1>
     <p class="meta">
 
 
@@ -82,57 +83,53 @@
   
 
 
-<time datetime="2013-08-24T16:13:00+08:00" pubdate data-updated="true">Aug 24<span>th</span>, 2013</time></p>
+<time datetime="2013-08-24T00:21:00+08:00" pubdate data-updated="true">Aug 24<span>th</span>, 2013</time></p>
   </header>
   
-  <p>之前给大家介绍了在文章直接插入代码文件的一款插件：<strong>include code</strong> 现在有一款插件，可以在文章中插入另一篇文章。有了这插件，我可以很容易将相关的文章都汇集在一篇文章中（例如写一篇教程）。就像把一篇长篇大论分割成一小块一小块，这使得编辑的时候，更舒心，排版也更加方便了。所以有必要介绍一下这款如此奇特的插件——<strong>Render Partial</strong>。</p>
+  <p>有了此插件，你可以在文章中随意地插入代码，你还可以附带上代码标题以及下载链接。规则很简单，一看就懂。</p>
 
-<h2>语法</h2>
+<h2>代码</h2>
 
-<pre><code>{% render_partial 文件路径 %\}
+<pre><code>``` 语言种类 标题 下载链接 下载链接的标题
+    代码区
+``` 
 </code></pre>
 
-<h3>注意:</h3>
+<h2>一个例子讲解</h2>
+
+<pre><code>``` ruby Discover if a number is prime http://www.noulakaz.net 源码下载
+class Fixnum
+  def prime?
+    ('1' * self) !~ /^1?$|^(11+?)\1+$/
+  end
+end
+```
+</code></pre>
+
+<figure class='code'><figcaption><span>Discover if a number is prime</span><a href='http://www.noulakaz.net'>源码下载</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Fixnum</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">prime?</span>
+</span><span class='line'>    <span class="p">(</span><span class="s1">&#39;1&#39;</span> <span class="o">*</span> <span class="nb">self</span><span class="p">)</span> <span class="o">!~</span> <span class="sr">/^1?$|^(11+?)\1+$/</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>注意：</h3>
 
 <ul>
-<li>根目录默认为<code>source</code>;</li>
-<li>只有一个参数，就是文章的路径。例如：添加路径 <code>/source/doc/1.markdown</code>的文章到一篇文章中，你可以这样写<code>{% render_partial doc/1.markdown %}</code></li>
-<li>如果想访问<code>source</code>的上级，可以这样写：<code>../README.markdown</code></li>
+<li>所有参数都是不必要的。不填就没有代码标题、代码高亮等效果；</li>
+<li>ruby    #先写明语言种类；</li>
+<li>Discover if a number is prime    #代码区块的标题；</li>
+<li><a href="http://www.noulakaz.net">http://www.noulakaz.net</a>    #代码的下载链接地址；</li>
+<li>源码下载    #下载链接的标题；</li>
 </ul>
 
 
-<p><strong>对一篇文章也进行区块化，这真是Octopress 的一大特色。</strong></p>
-
-  
-    <footer>
-      <p class="meta">
-        
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-24T16:13:00+08:00" pubdate data-updated="true">Aug 24<span>th</span>, 2013</time>
-        
-      </p>
-      
-        <div class="sharing">
-  
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://lrxianed.github.io/docs/render-partial/index.html" data-via="lrxianed" data-counturl="http://lrxianed.github.io/docs/render-partial/index.html" >Tweet</a>
-  
-  
-  
-</div>
-
-      
-    </footer>
   
 </article>
 
@@ -143,22 +140,6 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2013/08/24/blockquote/">Blockquote 插入引文</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/08/24/image-tag/">插入图片</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/08/24/include-code/">Include Code 嵌入代码文件</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/08/24/backtick-code-blocks/">Backtick Code Blocks 代码高亮</a>
-      </li>
     
       <li class="post">
         <a href="/blog/2013/08/23/i-want-to-say-something/">我想发牢骚</a>
@@ -182,6 +163,18 @@
     
       <li class="post">
         <a href="/blog/2013/08/16/if-i-love-you/">如果我不再爱你了</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/16/zhe-er/">折耳</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/15/zai-lai-yi-pian/">再来一篇</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/15/di-yi-pian/">第一篇:心情好</a>
       </li>
     
   </ul>

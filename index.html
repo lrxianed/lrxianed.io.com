@@ -9,9 +9,7 @@
   <meta name="author" content="Lrxianed">
 
   
-  <meta name="description" content="Markdown 原生的标记引文，使用的是 &gt; 作为引用标记，在每一段（或每一行）的最前面加上&gt;.看起来是这样的： 1
-2
-&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, &hellip;">
+  <meta name="description" content="我早想来发些牢骚了，无奈电脑出了些问题。今天和小雅去报考教师招聘，她郑重地做了个决定，澳头第一小学。她去年就在澳头失败，今年再战澳头，需要很大的勇气，从哪里跌倒就要从哪里站起来，这是坚强的表现。 心里多少还有些不安，这无可回避，但是不能表现出来，给予鼓励和支持才重要，再多的担心都是徒劳。她， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -69,369 +67,6 @@
     <div id="content">
       <div class="blog-index">
   
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/24/blockquote/">Blockquote 插入引文</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-24T18:33:00+08:00" pubdate data-updated="true">Aug 24<span>th</span>, 2013</time>
-        
-        
-         | <a href="/blog/2013/08/24/blockquote/#comments">Comments</a>
-        
-
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Markdown 原生的标记引文，使用的是 <code>&gt;</code> 作为引用标记，在每一段（或每一行）的最前面加上<code>&gt;</code>.看起来是这样的：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-</span><span class='line'>&gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae.</span></code></pre></td></tr></table></div></figure>
-
-
-<p>使用的效果如下</p>
-
-<blockquote><p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae.</p></blockquote>
-
-<p>Octopress为我们提供了一个更加强大的Blockquote插件，它可以为引文添加作者、出处、网页链接的功能，很讨人喜欢。语法其实和其他插件的语法相差无几。</p>
-
-<h2>语法</h2>
-
-<pre><code>{% blockquote 作者, 出处 链接 链接标题 %}
-Quote string
-{% endblockquote %}
-</code></pre>
-
-<h3>例子</h3>
-
-<blockquote><p>我一直觉得，小孩儿可以不了解大人，因为他们没有当过大人。但是大人不可以不了解小孩儿，因为每个大人都当过小孩儿。</p><footer><strong>九把刀</strong> <cite><a href='http://www.tduanzi.com/tweets/40334.html'>微博段子@风雨法师</a></cite></footer></blockquote>
-
-
-<p>话休絮烦，语法很简单，就不多讲了。官网还告诉我们，如果你不写链接标题的时候，链接自身就是标题，但是不会将整条长链接都显示出来，它会智能地截断。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/24/image-tag/">插入图片</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-24T15:11:00+08:00" pubdate data-updated="true">Aug 24<span>th</span>, 2013</time>
-        
-        
-         | <a href="/blog/2013/08/24/image-tag/#comments">Comments</a>
-        
-
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>如果你喜欢markdown插入图片的语法，那么你也一定会喜欢Octopress简洁的方式，而且附带更多的参数，有更丰富的样式。</p>
-
-<h2>语法</h2>
-
-<pre><code>{% img [class names] [图片路径] [宽] [高] [图片标题 替代文本] %}
-</code></pre>
-
-<h2>一个例子讲解</h2>
-
-<pre><code>{% img http://placekitten.com/890/280 %}
-{% img left http://placekitten.com/320/250 Place Kitten #2 %}
-{% img right http://placekitten.com/300/500 150 250 Place Kitten #3 %}
-{% img right http://placekitten.com/300/500 150 250 'Place Kitten #4' 'An image of a very cute kitten' %}
-</code></pre>
-
-<p><img class="left" src="http://image.xinli001.com/20130823/18295669882a0e175bf933.jpg" width="200" title="i love you" >如果我爱你，而你正巧也爱我——那你生病的时候，我会去照顾你，陪着你到好。你骑车的时候，我会要你小心一点，还要你到的时候打个电话跟我说。你忘了吃晚餐的时候，我会装作很生气，然后说：“你这样会让我担心呢！”你头发乱了的时候，我会笑着替你拨一拨，然后，手还留恋地在你发上想多待几秒。你想哭，我会陪你掉泪，尽管前一刻我的心情其实是雀跃的。你要笑，我会陪你笑出声，就算我上一秒其实是沮丧的。我在空闲的时候，会念念你的名字，想想你的声音。我在逛街的时候，会想到：啊，你正好缺了这个。我在发现了好东西的时候，一定马上想到：一定要你来看看。
-我失眠之后，听到你也失眠了，会在心里偷偷地傻笑。我在熬夜的时候，接到你只为说声“不要太累，早点睡吧”的电话会甜甜地笑着，然后乖乖地去睡。我在想你的时候，知道你一定也在想着我。</p>
-
-<p><img class="right" src="http://image.xinli001.com/20130823/18295669882a0e175bf933.jpg" width="100" title="i don`t love you" >但是，如果我爱你，而你不巧不爱我——那你生病的时候，我只会打电话安慰你，不敢奢求待在你身边。你骑车的时候，我只会暗暗地在心中希望你安全。你忘了吃晚餐，我只会笑着问：“为什么不吃啊？”你头发乱了，我只能轻轻地告诉你：“头发乱了哦。”你想哭，我只能在旁白呢无奈地轻轻叹着气。你想笑，我只能微微地对着你笑着。我在空闲的时候，还是会念念你的名字，想想你的声音。我在逛街的时候，会想到：是谁帮你买了这个呢？我在发现了好东西的时候，无奈地想着：会是谁告诉你这个好消息呢？我失眠之后，会躺着不让你看见我的黑眼圈。我在熬夜的时候，不敢期待会有电话铃声响起来。我在想你的时候，会想到，这时的你在想着谁呢？如果我不再爱你了，我一定就不爱你了，我会去爱上别人。世界上有什么不会失去的东西吗？我相信有，你最好也相信。</p>
-
-<h2>注意</h2>
-
-<ul>
-<li>[class names]是用来定义图片的方位的，有<code>left</code> <code>right</code>两个参数可选；</li>
-<li>你还可以定义图片的宽、高。这些都是markdown所不具有的。</li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/24/include-code/">Include Code 嵌入代码文件</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-24T01:05:00+08:00" pubdate data-updated="true">Aug 24<span>th</span>, 2013</time>
-        
-        
-         | <a href="/blog/2013/08/24/include-code/#comments">Comments</a>
-        
-
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>原来Octopress还可以在文章中直接嵌入代码文件的，好强大的样子。</p>
-
-<h2>语法</h2>
-
-<pre><code>{% include_code 标题 [lang:language] 文件路径 %}
-</code></pre>
-
-<h2>一个例子讲解</h2>
-
-<pre><code>{% include_code 我的第一JavaScript游戏 lang:js game.js %}
-</code></pre>
-
-<figure class='code'><figcaption><span>我的第一JavaScript游戏  (game.js)</span> <a href='/downloads/code/game.js'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">userChoice</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;Do you choose rock, paper or scissors?&quot;</span><span class="p">);</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">computerChoice</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">();</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="nx">computerChoice</span> <span class="o">&lt;</span> <span class="mf">0.34</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nx">computerChoice</span> <span class="o">=</span> <span class="s2">&quot;rock&quot;</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">computerChoice</span> <span class="o">&lt;=</span> <span class="mf">0.67</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nx">computerChoice</span> <span class="o">=</span> <span class="s2">&quot;paper&quot;</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nx">computerChoice</span> <span class="o">=</span> <span class="s2">&quot;scissors&quot;</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="kd">var</span> <span class="nx">compare</span> <span class="o">=</span><span class="kd">function</span><span class="p">(</span><span class="nx">choice1</span><span class="p">,</span><span class="nx">choice2</span><span class="p">){</span>
-</span><span class='line'>  <span class="c1">//打成平手；</span>
-</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="nx">choice1</span><span class="o">===</span><span class="nx">choice2</span><span class="p">){</span>
-</span><span class='line'>      <span class="kd">var</span> <span class="nx">userChoice</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;The result is a tie!Please choose again.rock, paper or scissors?&quot;</span><span class="p">);</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  <span class="c1">//选手出石头，电脑出剪刀；</span>
-</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="nx">choice1</span><span class="o">===</span><span class="s2">&quot;rock&quot;</span><span class="p">){</span>
-</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="nx">choice2</span><span class="o">===</span><span class="s2">&quot;scissors&quot;</span><span class="p">){</span>
-</span><span class='line'>          <span class="k">return</span> <span class="s2">&quot; You are rock,computer is scissors,You wins.&quot;</span><span class="p">;</span>
-</span><span class='line'>      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span><span class='line'>          <span class="k">return</span> <span class="s2">&quot;You are rock,computer is paper,Computer wins.&quot;</span><span class="p">;</span>
-</span><span class='line'>      <span class="p">}</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  <span class="c1">//选手出布，电脑出石头；</span>
-</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="nx">choice1</span><span class="o">===</span><span class="s2">&quot;paper&quot;</span><span class="p">){</span>
-</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="nx">choice2</span><span class="o">===</span><span class="s2">&quot;rock&quot;</span><span class="p">){</span>
-</span><span class='line'>          <span class="k">return</span> <span class="s2">&quot;You are paper,computer is rock,You wins.&quot;</span><span class="p">;</span>
-</span><span class='line'>      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span><span class='line'>          <span class="k">return</span> <span class="s2">&quot;You are paper,computer is scissors,Computer wins.&quot;</span><span class="p">;</span>
-</span><span class='line'>      <span class="p">}</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  <span class="c1">//选手出剪刀，电脑出石头；</span>
-</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="nx">choice1</span><span class="o">===</span><span class="s2">&quot;scissors&quot;</span><span class="p">){</span>
-</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="nx">choice2</span><span class="o">===</span><span class="s2">&quot;rock&quot;</span><span class="p">){</span>
-</span><span class='line'>          <span class="k">return</span> <span class="s2">&quot;You are scissors,computer is rock,Computer wins.&quot;</span><span class="p">;</span>
-</span><span class='line'>      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span><span class='line'>      <span class="k">return</span> <span class="s2">&quot;You are scissors,computer is paper,sYou wins.&quot;</span><span class="p">;</span>
-</span><span class='line'>      <span class="p">}</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'><span class="p">};</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">compare</span> <span class="p">(</span><span class="nx">userChoice</span><span class="p">,</span><span class="nx">computerChoice</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>注意</h3>
-
-<ul>
-<li>默认的代码文件默认的存放文件夹（也就是代码的根目录）是<code>source/downloads/code</code>，如果没有你可以自己创建；如果你想修改默认的存放路径，可用在<code>_config.yml</code>中修改。</li>
-<li><code>[lang:language]</code>不是必要的，此插件会自动识别代码的语言分类，但不是所有语言种类都能识别，写上就不会错的啦！</li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/24/backtick-code-blocks/">Backtick Code Blocks 代码高亮</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-24T00:21:00+08:00" pubdate data-updated="true">Aug 24<span>th</span>, 2013</time>
-        
-        
-         | <a href="/blog/2013/08/24/backtick-code-blocks/#comments">Comments</a>
-        
-
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>有了此插件，你可以在文章中随意地插入代码，你还可以附带上代码标题以及下载链接。规则很简单，一看就懂。</p>
-
-<h2>代码</h2>
-
-<pre><code>``` 语言种类 标题 下载链接 下载链接的标题
-    代码区
-``` 
-</code></pre>
-
-<h2>一个例子讲解</h2>
-
-<pre><code>``` ruby Discover if a number is prime http://www.noulakaz.net 源码下载
-class Fixnum
-  def prime?
-    ('1' * self) !~ /^1?$|^(11+?)\1+$/
-  end
-end
-```
-</code></pre>
-
-<figure class='code'><figcaption><span>Discover if a number is prime</span><a href='http://www.noulakaz.net'>源码下载</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Fixnum</span>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">prime?</span>
-</span><span class='line'>    <span class="p">(</span><span class="s1">&#39;1&#39;</span> <span class="o">*</span> <span class="nb">self</span><span class="p">)</span> <span class="o">!~</span> <span class="sr">/^1?$|^(11+?)\1+$/</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>注意：</h3>
-
-<ul>
-<li>所有参数都是不必要的。不填就没有代码标题、代码高亮等效果；</li>
-<li>ruby    #先写明语言种类；</li>
-<li>Discover if a number is prime    #代码区块的标题；</li>
-<li><a href="http://www.noulakaz.net">http://www.noulakaz.net</a>    #代码的下载链接地址；</li>
-<li>源码下载    #下载链接的标题；</li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
   
   
     <article>
@@ -742,9 +377,130 @@ end
 
     </article>
   
-  <div class="pagination">
+  
+    <article>
+      
+  <header>
     
-      <a class="prev" href="/blog/page/2/">&larr; Older</a>
+      <h1 class="entry-title"><a href="/blog/2013/08/16/zhe-er/">折耳</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-16T21:01:00+08:00" pubdate data-updated="true">Aug 16<span>th</span>, 2013</time>
+        
+        
+         | <a href="/blog/2013/08/16/zhe-er/#comments">Comments</a>
+        
+
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="http://ww4.sinaimg.cn/mw690/630e4e4egw1e7oap15fjjj20dw0ebjs0.jpg" alt="折耳" /></p>
+
+<p>可爱是一种痛</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/08/15/zai-lai-yi-pian/">再来一篇</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-15T21:00:00+08:00" pubdate data-updated="true">Aug 15<span>th</span>, 2013</time>
+        
+        
+         | <a href="/blog/2013/08/15/zai-lai-yi-pian/#comments">Comments</a>
+        
+
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>今天在办公室搞古了很久也没能在电脑上配置好环境，我怀疑是rubygems.org被屏蔽了，总是装不上依赖文件，taobao.org的更不行了。
+回到家之后在我的笔记本上继续搞古，Windows 下安装Ruby真的很多问题，今晚必须在十点之前搞好，然后睡觉。不能熬夜!!!!</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/08/15/di-yi-pian/">第一篇:心情好</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-15T00:52:00+08:00" pubdate data-updated="true">Aug 15<span>th</span>, 2013</time>
+        
+        
+         | <a href="/blog/2013/08/15/di-yi-pian/#comments">Comments</a>
+        
+
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>今晚和女神聊了半个钟头，心里暖暖的。虽然听得出我们只是朋友，但我不会放弃的，我一定要追到你！</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
     
     <a href="/blog/archives">Blog Archives</a>
     
@@ -755,22 +511,6 @@ end
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2013/08/24/blockquote/">Blockquote 插入引文</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/08/24/image-tag/">插入图片</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/08/24/include-code/">Include Code 嵌入代码文件</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/08/24/backtick-code-blocks/">Backtick Code Blocks 代码高亮</a>
-      </li>
     
       <li class="post">
         <a href="/blog/2013/08/23/i-want-to-say-something/">我想发牢骚</a>
@@ -794,6 +534,18 @@ end
     
       <li class="post">
         <a href="/blog/2013/08/16/if-i-love-you/">如果我不再爱你了</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/16/zhe-er/">折耳</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/15/zai-lai-yi-pian/">再来一篇</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/15/di-yi-pian/">第一篇:心情好</a>
       </li>
     
   </ul>
