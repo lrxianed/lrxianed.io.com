@@ -5,12 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>折耳 - Lrxianed</title>
+  <title>Blockquote 插入引文 - Lrxianed</title>
   <meta name="author" content="Lrxianed">
 
   
-  <meta name="description" content=" 可爱是一种痛
-">
+  <meta name="description" content="Markdown 原生的标记引文，使用的是 &gt; 作为引用标记，在每一段（或每一行）的最前面加上&gt;.看起来是这样的： 1
+2
+&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://lrxianed.github.io/blog/2013/08/16/zhe-er">
+  <link rel="canonical" href="http://lrxianed.github.io/blog/2013/08/24/blockquote">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Lrxianed" type="application/atom+xml">
@@ -70,7 +71,7 @@
   
   <header>
     
-      <h1 class="entry-title">折耳</h1>
+      <h1 class="entry-title">Blockquote 插入引文</h1>
     
     
       <p class="meta">
@@ -86,7 +87,7 @@
   
 
 
-<time datetime="2013-08-16T21:01:00+08:00" pubdate data-updated="true">Aug 16<span>th</span>, 2013</time>
+<time datetime="2013-08-24T18:33:00+08:00" pubdate data-updated="true">Aug 24<span>th</span>, 2013</time>
         
         
          | <a href="#comments">Comments</a>
@@ -97,9 +98,34 @@
   </header>
 
 
-<div class="entry-content"><p><img src="http://ww4.sinaimg.cn/mw690/630e4e4egw1e7oap15fjjj20dw0ebjs0.jpg" alt="折耳" /></p>
+<div class="entry-content"><p>Markdown 原生的标记引文，使用的是 <code>&gt;</code> 作为引用标记，在每一段（或每一行）的最前面加上<code>&gt;</code>.看起来是这样的：</p>
 
-<p>可爱是一种痛</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+</span><span class='line'>&gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>使用的效果如下</p>
+
+<blockquote><p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae.</p></blockquote>
+
+<p>Octopress为我们提供了一个更加强大的Blockquote插件，它可以为引文添加作者、出处、网页链接的功能，很讨人喜欢。语法其实和其他插件的语法相差无几。</p>
+
+<h2>语法</h2>
+
+<pre><code>{% blockquote 作者, 出处 链接 链接标题 %}
+Quote string
+{% endblockquote %}
+</code></pre>
+
+<h3>例子</h3>
+
+<blockquote><p>我一直觉得，小孩儿可以不了解大人，因为他们没有当过大人。但是大人不可以不了解小孩儿，因为每个大人都当过小孩儿。</p><footer><strong>九把刀</strong> <cite><a href='http://www.tduanzi.com/tweets/40334.html'>微博段子@风雨法师</a></cite></footer></blockquote>
+
+
+<p>话休絮烦，语法很简单，就不多讲了。官网还告诉我们，如果你不写链接标题的时候，链接自身就是标题，但是不会将整条长链接都显示出来，它会智能地截断。</p>
 </div>
 
 
@@ -122,21 +148,15 @@
   
 
 
-<time datetime="2013-08-16T21:01:00+08:00" pubdate data-updated="true">Aug 16<span>th</span>, 2013</time>
+<time datetime="2013-08-24T18:33:00+08:00" pubdate data-updated="true">Aug 24<span>th</span>, 2013</time>
       
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/tu-pian/'>图片</a>
-  
-</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://lrxianed.github.io/blog/2013/08/16/zhe-er/" data-via="lrxianed" data-counturl="http://lrxianed.github.io/blog/2013/08/16/zhe-er/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://lrxianed.github.io/blog/2013/08/24/blockquote/" data-via="lrxianed" data-counturl="http://lrxianed.github.io/blog/2013/08/24/blockquote/" >Tweet</a>
   
   
   
@@ -145,10 +165,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/08/15/zai-lai-yi-pian/" title="Previous Post: 再来一篇">&laquo; 再来一篇</a>
+        <a class="basic-alignment left" href="/blog/2013/08/24/render-partial/" title="Previous Post: 在文章中插入文章">&laquo; 在文章中插入文章</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/08/16/if-i-love-you/" title="Next Post: 如果我不再爱你了">如果我不再爱你了 &raquo;</a>
       
     </p>
   </footer>

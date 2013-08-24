@@ -9,7 +9,9 @@
   <meta name="author" content="Lrxianed">
 
   
-  <meta name="description" content="之前给大家介绍了在文章直接插入代码文件的一款插件：include code 现在有一款插件，可以在文章中插入另一篇文章。有了这插件，我可以很容易将相关的文章都汇集在一篇文章中（例如写一篇教程）。就像把一篇长篇大论分割成一小块一小块，这使得编辑的时候，更舒心，排版也更加方便了。 &hellip;">
+  <meta name="description" content="Markdown 原生的标记引文，使用的是 &gt; 作为引用标记，在每一段（或每一行）的最前面加上&gt;.看起来是这样的： 1
+2
+&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +68,73 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/08/24/blockquote/">Blockquote 插入引文</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-24T18:33:00+08:00" pubdate data-updated="true">Aug 24<span>th</span>, 2013</time>
+        
+        
+         | <a href="/blog/2013/08/24/blockquote/#comments">Comments</a>
+        
+
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Markdown 原生的标记引文，使用的是 <code>&gt;</code> 作为引用标记，在每一段（或每一行）的最前面加上<code>&gt;</code>.看起来是这样的：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+</span><span class='line'>&gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>使用的效果如下</p>
+
+<blockquote><p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae.</p></blockquote>
+
+<p>Octopress为我们提供了一个更加强大的Blockquote插件，它可以为引文添加作者、出处、网页链接的功能，很讨人喜欢。语法其实和其他插件的语法相差无几。</p>
+
+<h2>语法</h2>
+
+<pre><code>{% blockquote 作者, 出处 链接 链接标题 %}
+Quote string
+{% endblockquote %}
+</code></pre>
+
+<h3>例子</h3>
+
+<blockquote><p>我一直觉得，小孩儿可以不了解大人，因为他们没有当过大人。但是大人不可以不了解小孩儿，因为每个大人都当过小孩儿。</p><footer><strong>九把刀</strong> <cite><a href='http://www.tduanzi.com/tweets/40334.html'>微博段子@风雨法师</a></cite></footer></blockquote>
+
+
+<p>话休絮烦，语法很简单，就不多讲了。官网还告诉我们，如果你不写链接标题的时候，链接自身就是标题，但是不会将整条长链接都显示出来，它会智能地截断。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -678,56 +747,6 @@ end
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/16/if-i-love-you/">如果我不再爱你了</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-16T22:37:00+08:00" pubdate data-updated="true">Aug 16<span>th</span>, 2013</time>
-        
-        
-         | <a href="/blog/2013/08/16/if-i-love-you/#comments">Comments</a>
-        
-
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><html>
-<embed src="http://fm.xinli001.com/509/miniplayer/" type="application/x-shockwave-flash" width="300" height="37" wmode="opaque"></embed>
-</html></p>
-
-<p>我在熬夜的时候，不敢期待会有电话铃声响起来。</p>
-
-<p>我在想你的时候，会想到，这时的你在想着谁呢？</p>
-
-<p>如果我不再爱你了，我一定就不爱你了，我会去爱上别人。</p>
-
-<p>世界上有什么不会失去的东西吗？我相信有，你最好也相信。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -741,6 +760,10 @@ end
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/08/24/blockquote/">Blockquote 插入引文</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/08/24/render-partial/">在文章中插入文章</a>
@@ -776,10 +799,6 @@ end
     
       <li class="post">
         <a href="/blog/2013/08/16/i-want-to-sleep/">睡觉去</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/08/16/if-i-love-you/">如果我不再爱你了</a>
       </li>
     
   </ul>
