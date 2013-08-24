@@ -49,10 +49,6 @@
         <lastmod>2013-08-24T17:12:12+08:00</lastmod>
     </url>
     <url>
-        <loc>http://lrxianed.github.io/blog/2013/08/24/render-partial/</loc>
-        <lastmod>2013-08-24T16:56:09+08:00</lastmod>
-    </url>
-    <url>
         <loc>http://lrxianed.github.io/blog/2013/08/24/blockquote/</loc>
         <lastmod>2013-08-24T18:52:43+08:00</lastmod>
     </url>
@@ -63,6 +59,14 @@
     <url>
         <loc>http://lrxianed.github.io/blog/archives/</loc>
         <lastmod>2013-08-24T18:52:43+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://lrxianed.github.io/docs/</loc>
+        <lastmod>2013-08-24T19:21:20+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://lrxianed.github.io/docs/render-partial/</loc>
+        <lastmod>2013-08-24T19:19:51+08:00</lastmod>
     </url>
     <url>
         <loc>http://lrxianed.github.io/</loc>

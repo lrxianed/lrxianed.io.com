@@ -4,7 +4,7 @@
   <title><![CDATA[Lrxianed]]></title>
   <link href="http://lrxianed.github.io/atom.xml" rel="self"/>
   <link href="http://lrxianed.github.io/"/>
-  <updated>2013-08-24T18:53:47+08:00</updated>
+  <updated>2013-08-24T19:22:02+08:00</updated>
   <id>http://lrxianed.github.io/</id>
   <author>
     <name><![CDATA[Lrxianed]]></name>
@@ -46,31 +46,6 @@ Quote string
 
 
 <p>话休絮烦，语法很简单，就不多讲了。官网还告诉我们，如果你不写链接标题的时候，链接自身就是标题，但是不会将整条长链接都显示出来，它会智能地截断。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[在文章中插入文章]]></title>
-    <link href="http://lrxianed.github.io/blog/2013/08/24/render-partial/"/>
-    <updated>2013-08-24T16:13:00+08:00</updated>
-    <id>http://lrxianed.github.io/blog/2013/08/24/render-partial</id>
-    <content type="html"><![CDATA[<p>之前给大家介绍了在文章直接插入代码文件的一款插件：<strong>include code</strong> 现在有一款插件，可以在文章中插入另一篇文章。有了这插件，我可以很容易将相关的文章都汇集在一篇文章中（例如写一篇教程）。就像把一篇长篇大论分割成一小块一小块，这使得编辑的时候，更舒心，排版也更加方便了。所以有必要介绍一下这款如此奇特的插件——<strong>Render Partial</strong>。</p>
-
-<h2>语法</h2>
-
-<pre><code>{% render_partial 文件路径 %\}
-</code></pre>
-
-<h3>注意:</h3>
-
-<ul>
-<li>根目录默认为<code>source</code>;</li>
-<li>只有一个参数，就是文章的路径。例如：添加路径 <code>/source/doc/1.markdown</code>的文章到一篇文章中，你可以这样写<code>{% render_partial doc/1.markdown %}</code></li>
-<li>如果想访问<code>source</code>的上级，可以这样写：<code>../README.markdown</code></li>
-</ul>
-
-
-<p><strong>对一篇文章也进行区块化，这真是Octopress 的一大特色。</strong></p>
 ]]></content>
   </entry>
   

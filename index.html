@@ -59,6 +59,7 @@
   
 <ul class="main-navigation">
   <li><a href="/">首页</a></li>
+  <li><a href="/docs">文档资料</a></li>
   <li><a href="/blog/archives">文章列表</a></li>
   <li><a href="/blog/about">关于</a></li>
 </ul>
@@ -129,62 +130,6 @@ Quote string
 
 
 <p>话休絮烦，语法很简单，就不多讲了。官网还告诉我们，如果你不写链接标题的时候，链接自身就是标题，但是不会将整条长链接都显示出来，它会智能地截断。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/24/render-partial/">在文章中插入文章</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-24T16:13:00+08:00" pubdate data-updated="true">Aug 24<span>th</span>, 2013</time>
-        
-        
-         | <a href="/blog/2013/08/24/render-partial/#comments">Comments</a>
-        
-
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>之前给大家介绍了在文章直接插入代码文件的一款插件：<strong>include code</strong> 现在有一款插件，可以在文章中插入另一篇文章。有了这插件，我可以很容易将相关的文章都汇集在一篇文章中（例如写一篇教程）。就像把一篇长篇大论分割成一小块一小块，这使得编辑的时候，更舒心，排版也更加方便了。所以有必要介绍一下这款如此奇特的插件——<strong>Render Partial</strong>。</p>
-
-<h2>语法</h2>
-
-<pre><code>{% render_partial 文件路径 %\}
-</code></pre>
-
-<h3>注意:</h3>
-
-<ul>
-<li>根目录默认为<code>source</code>;</li>
-<li>只有一个参数，就是文章的路径。例如：添加路径 <code>/source/doc/1.markdown</code>的文章到一篇文章中，你可以这样写<code>{% render_partial doc/1.markdown %}</code></li>
-<li>如果想访问<code>source</code>的上级，可以这样写：<code>../README.markdown</code></li>
-</ul>
-
-
-<p><strong>对一篇文章也进行区块化，这真是Octopress 的一大特色。</strong></p>
 </div>
   
   
@@ -747,6 +692,56 @@ end
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/08/16/if-i-love-you/">如果我不再爱你了</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-16T22:37:00+08:00" pubdate data-updated="true">Aug 16<span>th</span>, 2013</time>
+        
+        
+         | <a href="/blog/2013/08/16/if-i-love-you/#comments">Comments</a>
+        
+
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><html>
+<embed src="http://fm.xinli001.com/509/miniplayer/" type="application/x-shockwave-flash" width="300" height="37" wmode="opaque"></embed>
+</html></p>
+
+<p>我在熬夜的时候，不敢期待会有电话铃声响起来。</p>
+
+<p>我在想你的时候，会想到，这时的你在想着谁呢？</p>
+
+<p>如果我不再爱你了，我一定就不爱你了，我会去爱上别人。</p>
+
+<p>世界上有什么不会失去的东西吗？我相信有，你最好也相信。</p>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -763,10 +758,6 @@ end
     
       <li class="post">
         <a href="/blog/2013/08/24/blockquote/">Blockquote 插入引文</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/08/24/render-partial/">在文章中插入文章</a>
       </li>
     
       <li class="post">
@@ -799,6 +790,10 @@ end
     
       <li class="post">
         <a href="/blog/2013/08/16/i-want-to-sleep/">睡觉去</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/16/if-i-love-you/">如果我不再爱你了</a>
       </li>
     
   </ul>
