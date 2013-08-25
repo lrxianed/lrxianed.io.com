@@ -4,7 +4,7 @@
   <title><![CDATA[Lrxianed]]></title>
   <link href="http://lrxianed.github.io/atom.xml" rel="self"/>
   <link href="http://lrxianed.github.io/"/>
-  <updated>2013-08-25T22:36:30+08:00</updated>
+  <updated>2013-08-25T23:22:51+08:00</updated>
   <id>http://lrxianed.github.io/</id>
   <author>
     <name><![CDATA[Lrxianed]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[boring]]></title>
+    <link href="http://lrxianed.github.io/blog/2013/08/25/boring/"/>
+    <updated>2013-08-25T23:00:00+08:00</updated>
+    <id>http://lrxianed.github.io/blog/2013/08/25/boring</id>
+    <content type="html"><![CDATA[<p>今晚还在整理Octopress的资料，整理得有些烦闷了，我得停下来，等有心情的时候再整理，总不能一下子把全部的工作都完成吧。出现这种急功近利的状况，那么你就脱离初衷违背自己了。那么让自己休息一下吧。其实这些资料并不急，一点都不急。这只不过是我学习的笔记，我记录下来了，分享出去。</p>
+
+<p>这段时间用Octopress写博客，学到很多。<code>git</code> <code>vim</code> <code>markdown</code>多少接触了些。渐渐喜欢上这些简单纯粹的东西，wordpress已经给我抛在一边了，实在有些对不住。或许有一天，我会将Octopress发布到我的域名<a href="http://lrxianed.com">lrxianed.com</a>上去。github是不会离开的了，它是可靠的后盾，虽然我也很信任wopus。</p>
+
+<p>今天和小雅在图书馆复习，下星期她就要参见考试了，所以下星期就不用去图书馆了。不过机会还是有的，需要自己去创造。大家都要加油！！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[我想发牢骚]]></title>
