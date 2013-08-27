@@ -40,10 +40,10 @@ body > header {
     font-size: 1.6em;
     position: relative; top: .4em;
   }
-  @media only screen and (min-width: 400px) {
+  @media only screen and (min-width: 300px) {
     font-size: .82em;
     hgroup {
-      left: -3.7em;
+      left: -1.5em;
       width: 22em;
     }
     h1 { padding-bottom: 0;

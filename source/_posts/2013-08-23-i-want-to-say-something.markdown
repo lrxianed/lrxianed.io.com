@@ -3,8 +3,8 @@ layout: post
 title: "我想发牢骚"
 date: 2013-08-23 00:31
 comments: true
-sharing：true
-categories: 
+sharing: true
+categories: love
 ---
 我早想来发些牢骚了，无奈电脑出了些问题。今天和小雅去报考教师招聘，她郑重地做了个决定，澳头第一小学。她去年就在澳头失败，今年再战澳头，需要很大的勇气，从哪里跌倒就要从哪里站起来，这是坚强的表现。
 

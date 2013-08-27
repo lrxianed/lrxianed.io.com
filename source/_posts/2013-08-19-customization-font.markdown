@@ -11,13 +11,17 @@ categories: Octopress
 ####/source/_includes/custom/head.html
 在此文件中引入字体地址，例如：
 
-	<link href="http://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet" type="text/css">
+{% codeblock /source/_includes/custom/head.html %}
+<link href="http://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet" type="text/css">
+{% endcodeblock %}
 
 ####/sass/custom/_style.scss
 添加如下代码，用于修改博客顶部的博客名。
 
+``` html
     body > header h1 {
       font-family: "Crete Round", serif;
       text-transform: uppercase;
       font-weight: normal;
     }
+```
