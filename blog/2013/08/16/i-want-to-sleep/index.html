@@ -89,10 +89,10 @@
 
 <time datetime="2013-08-16T23:19:00+08:00" pubdate data-updated="true">Aug 16<span>th</span>, 2013</time>
         
+         
+         <script type="text/javascript" src="http://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+         | <a href="#changyan_area" id="changyan_count_unit">评论</a>
         
-         | <a href="#comments">Comments</a>
-        
-
       </p>
     
   </header>
@@ -135,8 +135,6 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://lrxianed.github.io/blog/2013/08/16/i-want-to-sleep/" data-via="lrxianed" data-counturl="http://lrxianed.github.io/blog/2013/08/16/i-want-to-sleep/" >Tweet</a>
-  
   
   
 </div>
@@ -153,25 +151,26 @@
   </footer>
 </article>
 
-
   <section>
-    <h1>Comments</h1>
-    <div id="comments" aria-live="polite"><!-- Duoshuo Comment BEGIN -->
-<div class="ds-thread"></div>
-<script type="text/javascript">
-  var duoshuoQuery = {short_name:"lrx"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = 'http://static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] 
-    || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
+    <div id="comments" aria-live="polite"><!-- changyan Comment BEGIN -->
+<div id="SOHUCS"></div>
+<script>
+  (function(){
+    var appid = 'cyqJTzmP4',
+    conf = 'prod_297fa7777981f402dbba17e9f29e292d';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+    window.SCS_NO_IFRAME = true;
+  })()
 </script>
-<!-- Duoshuo Comment END -->
-</div>
+<!-- changyan Comment END --></div>
   </section>
+
 
 </div>
 
@@ -223,11 +222,7 @@
     
   </ul>
 </section>
-<section>
-<h1>Recent Comments</h1>
-<ul class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="20"></ul>
 
-</section>
 
 
 
@@ -250,16 +245,6 @@
 
 
 
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
 
 
 
