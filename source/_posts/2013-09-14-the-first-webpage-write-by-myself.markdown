@@ -1,0 +1,16 @@
+---
+layout: post
+title: "我完成了第一个网页"
+date: 2013-09-14 13:59
+comments: true
+categories: HTML
+---
+#completed
+今天，我完成了我的第一个网页。选择大亚湾人社局的网站来模仿，没有什么恶意，完成出于学习的目的。此次实战div+css（还有一两行的javascript），收获良多。为自己进一步学习JavaScript做一个铺垫。
+
+网页在IE下浏览不正常，我也不想为IE另写一份css，因为这个网页很丑，写完就不想再动了。但是它对于我来说还是很有难度的，不是轻易就可以写出来。导航栏和幻灯片部分没有使用JavaScript，是不会动的。我还不会JavaScript，还需要再学习。网页代码已上传到了github，可以在线浏览。
+
+网址：[http://lrxianed.github.io/html](http://lrxianed.github.io/html)
+
+#Next
+下一步我要模仿一个好现代的网页，例如：[Surface With Windows 8 Pro](http://www.microsoft.com/surface/zh-cn/surface-with-windows-8-pro)我很喜欢这种用色块切割每一部分内容，因为它传递出来的信息很明确，而且吸引人。
