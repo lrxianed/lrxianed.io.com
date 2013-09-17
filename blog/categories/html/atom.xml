@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: HTML | Lrxianed]]></title>
-  <link href="http://lrxianed.github.io/blog/categories/html/atom.xml" rel="self"/>
-  <link href="http://lrxianed.github.io/"/>
-  <updated>2013-09-17T23:55:49+08:00</updated>
-  <id>http://lrxianed.github.io/</id>
+  <link href="http://lrx.me/blog/categories/html/atom.xml" rel="self"/>
+  <link href="http://lrx.me/"/>
+  <updated>2013-09-18T00:22:04+08:00</updated>
+  <id>http://lrx.me/</id>
   <author>
     <name><![CDATA[Lrxianed]]></name>
     <email><![CDATA[lrxianed@qq.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[我完成了第一个网页]]></title>
-    <link href="http://lrxianed.github.io/blog/2013/09/14/the-first-webpage-write-by-myself/"/>
+    <link href="http://lrx.me/blog/2013/09/14/the-first-webpage-write-by-myself/"/>
     <updated>2013-09-14T13:59:00+08:00</updated>
-    <id>http://lrxianed.github.io/blog/2013/09/14/the-first-webpage-write-by-myself</id>
+    <id>http://lrx.me/blog/2013/09/14/the-first-webpage-write-by-myself</id>
     <content type="html"><![CDATA[<h1>completed</h1>
 
 <p>今天，我完成了我的第一个网页。选择大亚湾人社局的网站来模仿，没有什么恶意，完成出于学习的目的。此次实战div+css（还有一两行的javascript），收获良多。为自己进一步学习JavaScript做一个铺垫。</p>

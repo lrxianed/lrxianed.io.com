@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://lrxianed.github.io/sitemap.xml 
+Sitemap: http://lrx.me/sitemap.xml 

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Octopress | Lrxianed]]></title>
-  <link href="http://lrxianed.github.io/blog/categories/octopress/atom.xml" rel="self"/>
-  <link href="http://lrxianed.github.io/"/>
-  <updated>2013-09-17T23:55:49+08:00</updated>
-  <id>http://lrxianed.github.io/</id>
+  <link href="http://lrx.me/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://lrx.me/"/>
+  <updated>2013-09-18T00:22:04+08:00</updated>
+  <id>http://lrx.me/</id>
   <author>
     <name><![CDATA[Lrxianed]]></name>
     <email><![CDATA[lrxianed@qq.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[无差别浏览——Google Fonts]]></title>
-    <link href="http://lrxianed.github.io/blog/2013/08/19/customization-font/"/>
+    <link href="http://lrx.me/blog/2013/08/19/customization-font/"/>
     <updated>2013-08-19T23:01:00+08:00</updated>
-    <id>http://lrxianed.github.io/blog/2013/08/19/customization-font</id>
+    <id>http://lrx.me/blog/2013/08/19/customization-font</id>
     <content type="html"><![CDATA[<h2>Google Fonts</h2>
 
 <p>如果你想让你的网页上的字体在其他平台上看起来都是统一的、无差别的，那么你需要添加网络字体，<a href="http://www.google.com/fonts">Google Fonts</a>为我们提供丰富的网络字体，总有一款适合你！定制的方法也很简单，只需要修改两个文件，添加两行代码。<strong>注意：但<strong style="color: #e0f;">遗憾</strong>的是，此举只能应用英文字体，对于中文字体，是不起作用的。</strong></p>

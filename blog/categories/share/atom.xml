@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: share | Lrxianed]]></title>
-  <link href="http://lrxianed.github.io/blog/categories/share/atom.xml" rel="self"/>
-  <link href="http://lrxianed.github.io/"/>
-  <updated>2013-09-17T23:55:49+08:00</updated>
-  <id>http://lrxianed.github.io/</id>
+  <link href="http://lrx.me/blog/categories/share/atom.xml" rel="self"/>
+  <link href="http://lrx.me/"/>
+  <updated>2013-09-18T00:22:04+08:00</updated>
+  <id>http://lrx.me/</id>
   <author>
     <name><![CDATA[Lrxianed]]></name>
     <email><![CDATA[lrxianed@qq.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[飞一般的感觉]]></title>
-    <link href="http://lrxianed.github.io/blog/2013/08/18/ssd-on-my-mac-mini/"/>
+    <link href="http://lrx.me/blog/2013/08/18/ssd-on-my-mac-mini/"/>
     <updated>2013-08-18T00:40:00+08:00</updated>
-    <id>http://lrxianed.github.io/blog/2013/08/18/ssd-on-my-mac-mini</id>
+    <id>http://lrx.me/blog/2013/08/18/ssd-on-my-mac-mini</id>
     <content type="html"><![CDATA[<h3>感谢国家感谢党和人民！！</h3>
 
 <p>今天，Mac mini换上了美光的M500 SSD，速度很喜人，行云流水，打开一个软件只需跳两下，一二，两秒。连开Photoshop这样的大型软件也只是两下，那个爽啊，想开什么立刻就可以打开，不在需要焦急的等待，飞一般的感觉！</p>

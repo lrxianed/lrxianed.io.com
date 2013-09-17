@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: 图片 | Lrxianed]]></title>
-  <link href="http://lrxianed.github.io/blog/categories/tu-pian/atom.xml" rel="self"/>
-  <link href="http://lrxianed.github.io/"/>
-  <updated>2013-09-17T23:55:49+08:00</updated>
-  <id>http://lrxianed.github.io/</id>
+  <link href="http://lrx.me/blog/categories/tu-pian/atom.xml" rel="self"/>
+  <link href="http://lrx.me/"/>
+  <updated>2013-09-18T00:22:04+08:00</updated>
+  <id>http://lrx.me/</id>
   <author>
     <name><![CDATA[Lrxianed]]></name>
     <email><![CDATA[lrxianed@qq.com]]></email>
@@ -15,18 +15,18 @@
   
   <entry>
     <title type="html"><![CDATA[睡觉去]]></title>
-    <link href="http://lrxianed.github.io/blog/2013/08/16/i-want-to-sleep/"/>
+    <link href="http://lrx.me/blog/2013/08/16/i-want-to-sleep/"/>
     <updated>2013-08-16T23:19:00+08:00</updated>
-    <id>http://lrxianed.github.io/blog/2013/08/16/i-want-to-sleep</id>
+    <id>http://lrx.me/blog/2013/08/16/i-want-to-sleep</id>
     <content type="html"><![CDATA[<p><img src="/images/sleep.jpg" alt="sleep" /></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[折耳]]></title>
-    <link href="http://lrxianed.github.io/blog/2013/08/16/zhe-er/"/>
+    <link href="http://lrx.me/blog/2013/08/16/zhe-er/"/>
     <updated>2013-08-16T21:01:00+08:00</updated>
-    <id>http://lrxianed.github.io/blog/2013/08/16/zhe-er</id>
+    <id>http://lrx.me/blog/2013/08/16/zhe-er</id>
     <content type="html"><![CDATA[<p><img src="http://ww4.sinaimg.cn/mw690/630e4e4egw1e7oap15fjjj20dw0ebjs0.jpg" alt="折耳" /></p>
 
 <p>可爱是一种痛</p>
