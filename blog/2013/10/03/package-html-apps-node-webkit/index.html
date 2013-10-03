@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>打包Html应用 - Lrxianed</title>
+  <meta name="author" content="Lrxianed">
+
+  
+  <meta name="description" content="前段时间关注impress.js（注：impress.js是超炫的幻灯片演示工具），而且用它做了两个幻灯片。实质上，这两个幻灯片是网页来的，需要使用超级浏览器（Chrome 、Safari、Firefox等）才能看到绚丽的效果。假如到一个没有超级浏览器的电脑上演示，那怎么办，那不得先下个浏览器。 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://lrx.me/blog/2013/10/03/package-html-apps-node-webkit">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Lrxianed" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Fresca" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Lrxianed</a></h1>
+  
+    <h2>Wonderful is about to happen</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:lrx.me" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">首页</a></li>
+  <li><a href="/docs">文档资料</a></li>
+  <li><a href="/blog/archives">文章列表</a></li>
+  <li><a href="/blog/about">关于</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">打包Html应用</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-03T23:08:00+08:00" pubdate data-updated="true">Oct 3<span>rd</span>, 2013</time>
+        
+         
+         <script type="text/javascript" src="http://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+         | <a href="#changyan_area" id="changyan_count_unit">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>前段时间关注impress.js（注：impress.js是超炫的幻灯片演示工具），而且用它做了两个幻灯片。实质上，这两个幻灯片是网页来的，需要使用超级浏览器（Chrome 、Safari、Firefox等）才能看到绚丽的效果。假如到一个没有超级浏览器的电脑上演示，那怎么办，那不得先下个浏览器。如果能够将webkit和网页文件一起封装就好了。</p>
+
+<p>仔细谷歌之后，果真有这项技术。这个项目名字叫做<strong>node-webkit</strong>。下面是该项目的GitHub页面。</p>
+
+<p>GitHub：<a href="https://github.com/rogerwang/node-webkit">https://github.com/rogerwang/node-webkit</a></p>
+
+<h2>node-webkit</h2>
+
+<p>node-webkit能够让你的网页应用运行起来更像一款程序，而不是一个网页。这正是我想要的效果，而且创建起来非常简单。现在就去下载吧！<a href="https://github.com/rogerwang/node-webkit">GitHub | node-webkit</a></p>
+
+<h2>创建基本程序</h2>
+
+<p>首先要创建你的网页，首页以<code>index.html</code>命名（不这样命名也行，你喜欢，<code>package.json</code>里改就是了）。例如：</p>
+
+<figure class='code'><figcaption><span>index.html</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;title&gt;</span>Hello World!<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;h1&gt;</span>Hello World!<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后是创建<code>package.json</code>:</p>
+
+<figure class='code'><figcaption><span>package.json</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>{
+</span><span class='line'>  &quot;name&quot;: &quot;Hello World!&quot;,
+</span><span class='line'>  &quot;main&quot;: &quot;index.html&quot;,
+</span><span class='line'>  &quot;description&quot; : &quot;Hello world!&quot;,
+</span><span class='line'>  &quot;version&quot;: &quot;1.0 beta&quot;,
+</span><span class='line'>  &quot;window&quot;:{
+</span><span class='line'>    &quot;icon&quot;: &quot;icon.png&quot;,
+</span><span class='line'>    &quot;frame&quot;: true,
+</span><span class='line'>    &quot;fullscreen&quot;: false,
+</span><span class='line'>    &quot;toolbar&quot;: false
+</span><span class='line'>  },
+</span><span class='line'>  &quot;webkit&quot;: {
+</span><span class='line'>    &quot;plugin&quot;: true
+</span><span class='line'>  }
+</span><span class='line'>}
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>多余的解释:</h3>
+
+<ul>
+<li>name: 应用的名字；</li>
+<li>main: 应用首页；</li>
+<li>description: 应用的描述，会出现在窗口标题旁边哦！</li>
+<li>icon: 应用的图标，不设置会用默认的图标（只显示在标题）；</li>
+<li>toolbar: 是否显示工具栏；</li>
+<li>version: 版本号；</li>
+<li>fullscreen: 是否全屏模式打开；</li>
+</ul>
+
+
+<h3>注意事项:</h3>
+
+<ul>
+<li>最后一项后面不用逗号，能理解不？看看示例是怎么写的。</li>
+<li>其实还有很多参数，可以参考这里的介绍：<a href="https://github.com/rogerwang/node-webkit/wiki/Manifest-format">Manifest format</a></li>
+</ul>
+
+
+<h2>app.nw</h2>
+
+<p>下一步就是把所有的文件压缩，压缩时使用zip的压缩格式，还要把后缀改成<code>.nw</code>。</p>
+
+<p><strong>需要注意</strong>的是，不是把<code>index.html</code>和<code>package.json</code>放到一个文件夹里压缩，这是不对的。<strong>正确的操作</strong>是：选中所有文件，然后右键压缩，选择<code>zip</code>的压缩格式，修改后缀名为<code>.nw</code>，最后点击<code>确定</code>。</p>
+
+<p>那么，我们已经打包好了一个网页了：<code>app.nw</code></p>
+
+<p><strong>运行:</strong>将<code>app.nw</code>拖放到<code>nw.exe</code>上，就可以打开网页应用。</p>
+
+<h2>App.exe</h2>
+
+<p>到此，我们已经打包好我们的网页了，可是，这还不是我想要的形式，我需要的是打包成一个独立的运行程序<code>App.exe</code></p>
+
+<p>那么，我们需要用到CMD命令行。</p>
+
+<p>在CMD中进入到node-webkit工作的文件夹，然后输入<code>copy /b nw.exe+app.nw app.exe</code>
+很好理解，替换一下app的名字就可以。</p>
+
+<p>现在确实是<code>.exe</code>格式了，可以双击运行了。可是，依然不够完美。不完美的原因是，当它走出node-webkit的工作文件夹，它就没法运行了。所以接下来还有一步要走。</p>
+
+<h3>Enigma Virtual Box</h3>
+
+<p>官方网站的wiki中介绍了这么一个软件：<strong>Enigma Virtual Box</strong>，用来将<code>nw.pak</code>和其他<code>.dll</code>文件一同打包进一个<code>.exe</code>文件。</p>
+
+<p>具体操作方法如下：</p>
+
+<ol>
+<li>下载<a href="http://enigmaprotector.com/assets/files/enigmavb.exe">Enigma Virtual Box</a>安装。</li>
+<li>打开<strong>Enigma Virtual Box</strong>，在<code>Enter Input File Name</code>项选择<code>app.exe</code>。</li>
+<li>在下方多标签窗口的<code>Files</code>窗口，添加文件：所有的<code>.dll</code>文件和<code>nw.pak</code>（共5个文件）；确认添加文件后会弹出一个窗口，默认选项<code>%DEFAULT FOLDER</code>就可以了，直接点击<strong>OK</strong>。</li>
+<li>点击<strong>Files Options</strong>，把<code>Compress Files</code>勾选上，点击OK。</li>
+<li>大大力按下<strong>Process</strong>。</li>
+<li>大功告成，生成的可执行文件默认在<code>app.exe</code>的同一目录下。</li>
+</ol>
+
+
+<p>现在，不管你把它放到哪里，它都可以独立运行。只不过，它变大了。由原来的5Mb的网页变成了50Mb的可执行文件。而且我的impress.js幻灯片中的音频是失效的，暂时没弄懂是什么原因。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Lrxianed</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-03T23:08:00+08:00" pubdate data-updated="true">Oct 3<span>rd</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/html/'>html</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/09/27/a-day-of-remembrance/" title="Previous Post: 值得纪念的日子">&laquo; 值得纪念的日子</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <div id="comments" aria-live="polite"><!-- changyan Comment BEGIN -->
+<div id="SOHUCS"></div>
+<script>
+  (function(){
+    var appid = 'cyqJTzmP4',
+    conf = 'prod_297fa7777981f402dbba17e9f29e292d';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+    window.SCS_NO_IFRAME = true;
+  })()
+</script>
+<!-- changyan Comment END --></div>
+  </section>
+
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/10/03/package-html-apps-node-webkit/">打包Html应用</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/27/a-day-of-remembrance/">值得纪念的日子</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/22/last-of-i-love-you/">不放弃</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/17/logo-of-xinghan-primary-school/">兴汉小学校徽</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/14/the-first-webpage-write-by-myself/">我完成了第一个网页</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/08/faild/">失败哦</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/27/i-decided/">我决定</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/25/boring/">Boring</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/23/i-want-to-say-something/">我想发牢骚</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/19/customization-font/">无差别浏览——Google Fonts</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Lrxianed -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: HTML | Lrxianed]]></title>
+  <title><![CDATA[Category: html | Lrxianed]]></title>
   <link href="http://lrx.me/blog/categories/html/atom.xml" rel="self"/>
   <link href="http://lrx.me/"/>
-  <updated>2013-09-27T00:39:04+08:00</updated>
+  <updated>2013-10-03T23:26:59+08:00</updated>
   <id>http://lrx.me/</id>
   <author>
     <name><![CDATA[Lrxianed]]></name>
@@ -14,21 +14,119 @@
 
   
   <entry>
-    <title type="html"><![CDATA[我完成了第一个网页]]></title>
-    <link href="http://lrx.me/blog/2013/09/14/the-first-webpage-write-by-myself/"/>
-    <updated>2013-09-14T13:59:00+08:00</updated>
-    <id>http://lrx.me/blog/2013/09/14/the-first-webpage-write-by-myself</id>
-    <content type="html"><![CDATA[<h1>completed</h1>
+    <title type="html"><![CDATA[打包Html应用]]></title>
+    <link href="http://lrx.me/blog/2013/10/03/package-html-apps-node-webkit/"/>
+    <updated>2013-10-03T23:08:00+08:00</updated>
+    <id>http://lrx.me/blog/2013/10/03/package-html-apps-node-webkit</id>
+    <content type="html"><![CDATA[<p>前段时间关注impress.js（注：impress.js是超炫的幻灯片演示工具），而且用它做了两个幻灯片。实质上，这两个幻灯片是网页来的，需要使用超级浏览器（Chrome 、Safari、Firefox等）才能看到绚丽的效果。假如到一个没有超级浏览器的电脑上演示，那怎么办，那不得先下个浏览器。如果能够将webkit和网页文件一起封装就好了。</p>
 
-<p>今天，我完成了我的第一个网页。选择大亚湾人社局的网站来模仿，没有什么恶意，完成出于学习的目的。此次实战div+css（还有一两行的javascript），收获良多。为自己进一步学习JavaScript做一个铺垫。</p>
+<p>仔细谷歌之后，果真有这项技术。这个项目名字叫做<strong>node-webkit</strong>。下面是该项目的GitHub页面。</p>
 
-<p>网页在IE下浏览不正常，我也不想为IE另写一份css，因为这个网页很丑，写完就不想再动了。但是它对于我来说还是很有难度的，不是轻易就可以写出来。导航栏和幻灯片部分没有使用JavaScript，是不会动的。我还不会JavaScript，还需要再学习。网页代码已上传到了github，可以在线浏览。</p>
+<p>GitHub：<a href="https://github.com/rogerwang/node-webkit">https://github.com/rogerwang/node-webkit</a></p>
 
-<p>网址：<a href="http://lrxianed.github.io/html">http://lrxianed.github.io/html</a></p>
+<h2>node-webkit</h2>
 
-<h1>Next</h1>
+<p>node-webkit能够让你的网页应用运行起来更像一款程序，而不是一个网页。这正是我想要的效果，而且创建起来非常简单。现在就去下载吧！<a href="https://github.com/rogerwang/node-webkit">GitHub | node-webkit</a></p>
 
-<p>下一步我要模仿一个好现代的网页，例如：<a href="http://www.microsoft.com/surface/zh-cn/surface-with-windows-8-pro">Surface With Windows 8 Pro</a>我很喜欢这种用色块切割每一部分内容，因为它传递出来的信息很明确，而且吸引人。</p>
+<h2>创建基本程序</h2>
+
+<p>首先要创建你的网页，首页以<code>index.html</code>命名（不这样命名也行，你喜欢，<code>package.json</code>里改就是了）。例如：</p>
+
+<p>```html index.html</p>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Hello World!&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p><code>
+然后是创建``package.json``:
+</code>html package.json</p>
+
+<pre><code>{
+  "name": "Hello World!", 
+  "main": "index.html",
+  "description" : "Hello world!",
+  "version": "1.0 beta",
+  "window":{
+    "icon": "icon.png",
+    "frame": true,
+    "fullscreen": false,
+    "toolbar": false
+  },
+  "webkit": {
+    "plugin": true
+  }
+}
+</code></pre>
+
+<p>```</p>
+
+<h3>多余的解释:</h3>
+
+<ul>
+<li>name: 应用的名字；</li>
+<li>main: 应用首页；</li>
+<li>description: 应用的描述，会出现在窗口标题旁边哦！</li>
+<li>icon: 应用的图标，不设置会用默认的图标（只显示在标题）；</li>
+<li>toolbar: 是否显示工具栏；</li>
+<li>version: 版本号；</li>
+<li>fullscreen: 是否全屏模式打开；</li>
+</ul>
+
+
+<h3>注意事项:</h3>
+
+<ul>
+<li>最后一项后面不用逗号，能理解不？看看示例是怎么写的。</li>
+<li>其实还有很多参数，可以参考这里的介绍：<a href="https://github.com/rogerwang/node-webkit/wiki/Manifest-format">Manifest format</a></li>
+</ul>
+
+
+<h2>app.nw</h2>
+
+<p>下一步就是把所有的文件压缩，压缩时使用zip的压缩格式，还要把后缀改成<code>.nw</code>。</p>
+
+<p><strong>需要注意</strong>的是，不是把<code>index.html</code>和<code>package.json</code>放到一个文件夹里压缩，这是不对的。<strong>正确的操作</strong>是：选中所有文件，然后右键压缩，选择<code>zip</code>的压缩格式，修改后缀名为<code>.nw</code>，最后点击<code>确定</code>。</p>
+
+<p>那么，我们已经打包好了一个网页了：<code>app.nw</code></p>
+
+<p><strong>运行:</strong>将<code>app.nw</code>拖放到<code>nw.exe</code>上，就可以打开网页应用。</p>
+
+<h2>App.exe</h2>
+
+<p>到此，我们已经打包好我们的网页了，可是，这还不是我想要的形式，我需要的是打包成一个独立的运行程序<code>App.exe</code></p>
+
+<p>那么，我们需要用到CMD命令行。</p>
+
+<p>在CMD中进入到node-webkit工作的文件夹，然后输入<code>copy /b nw.exe+app.nw app.exe</code>
+很好理解，替换一下app的名字就可以。</p>
+
+<p>现在确实是<code>.exe</code>格式了，可以双击运行了。可是，依然不够完美。不完美的原因是，当它走出node-webkit的工作文件夹，它就没法运行了。所以接下来还有一步要走。</p>
+
+<h3>Enigma Virtual Box</h3>
+
+<p>官方网站的wiki中介绍了这么一个软件：<strong>Enigma Virtual Box</strong>，用来将<code>nw.pak</code>和其他<code>.dll</code>文件一同打包进一个<code>.exe</code>文件。</p>
+
+<p>具体操作方法如下：</p>
+
+<ol>
+<li>下载<a href="http://enigmaprotector.com/assets/files/enigmavb.exe">Enigma Virtual Box</a>安装。</li>
+<li>打开<strong>Enigma Virtual Box</strong>，在<code>Enter Input File Name</code>项选择<code>app.exe</code>。</li>
+<li>在下方多标签窗口的<code>Files</code>窗口，添加文件：所有的<code>.dll</code>文件和<code>nw.pak</code>（共5个文件）；确认添加文件后会弹出一个窗口，默认选项<code>%DEFAULT FOLDER</code>就可以了，直接点击<strong>OK</strong>。</li>
+<li>点击<strong>Files Options</strong>，把<code>Compress Files</code>勾选上，点击OK。</li>
+<li>大大力按下<strong>Process</strong>。</li>
+<li>大功告成，生成的可执行文件默认在<code>app.exe</code>的同一目录下。</li>
+</ol>
+
+
+<p>现在，不管你把它放到哪里，它都可以独立运行。只不过，它变大了。由原来的5Mb的网页变成了50Mb的可执行文件。而且我的impress.js幻灯片中的音频是失效的，暂时没弄懂是什么原因。</p>
 ]]></content>
   </entry>
   
