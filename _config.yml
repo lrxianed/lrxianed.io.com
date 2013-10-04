@@ -39,7 +39,7 @@ rdiscount:
     - autolink
     - footnotes
     - smart
-pygments: false # default python pygments have been replaced by pygments.rb
+pygments: true # default python pygments have been replaced by pygments.rb
 
 paginate: 10          # Posts per page on the blog index
 pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
@@ -73,7 +73,7 @@ twitter_user: lrxianed
 twitter_tweet_button: false
 
 # Google +1
-google_plus_one: 
+google_plus_one: ilrxianed@gmail.com
 google_plus_one_size: medium
 
 # Google Plus Profile
@@ -90,8 +90,8 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name: 
-disqus_show_comment_count: 
+disqus_short_name: lrx
+disqus_show_comment_count: 10
 
 # Google Analytics
 google_analytics_tracking_id:
@@ -101,4 +101,4 @@ facebook_like: false
 
 #畅言评论
 changyan_app_id: cyqJTzmP4
-changyan_comments: true
+changyan_comments: false
