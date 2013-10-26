@@ -4,7 +4,7 @@
   <title><![CDATA[Lrxianed]]></title>
   <link href="http://lrx.me/atom.xml" rel="self"/>
   <link href="http://lrx.me/"/>
-  <updated>2013-10-04T09:57:12+08:00</updated>
+  <updated>2013-10-26T13:14:20+08:00</updated>
   <id>http://lrx.me/</id>
   <author>
     <name><![CDATA[Lrxianed]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[更新 OS X 10.9]]></title>
+    <link href="http://lrx.me/blog/2013/10/26/update-os-x-10-dot-9/"/>
+    <updated>2013-10-26T12:57:00+08:00</updated>
+    <id>http://lrx.me/blog/2013/10/26/update-os-x-10-dot-9</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://ww3.sinaimg.cn/mw690/630e4e4etw1e9yhr16ybej209p0blt90.jpg" width="249" title="OS X 10.9" ></p>
+
+<p>昨天晚上呢，我家的小Mac与时俱进，OS更新到10.9了。下载系统就用了一天的时间，安装了三四次才正确安装上。新系统给我的体验很流畅，比更新前要流畅，不过依然会卡顿。我想，这应该是镁光的SSD的问题吧。</p>
+
+<p>我还把iwork套装给更新了。由于只有新用户才能免费下载iwork，而我不是，我只好在试用版基础上更新的。虽然苹果方面表示这个不是bug，是对用户的信任。不管怎么说，反正苹果不差我那点钱，既然免费那当然要面向全体用户啦~~</p>
+
+<p>新系统，赞！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[打包Html应用]]></title>
